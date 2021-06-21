@@ -1,0 +1,27 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: pink;
+}
+
+/* navbar styles */
+#navbarDropdownMenuLink {
+  outline: none !important;
+  border: none !important;
+}
+
+#navbarDropdownMenuLink:hover {
+  outline: none !important;
+}
+
+#navbarDropdownMenuLink:active {
+  outline: none !important;
+}
+
+h1 {
+  color: pink;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
