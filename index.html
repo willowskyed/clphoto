@@ -18,9 +18,9 @@
   </head>
 
   <body>
-
-    <nav class="navbar container-fluid">
-      <div class="container">
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#home">CassiLeigh Photography</a>
         <div class="dropdown">
           <button class="btn btn-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
@@ -33,21 +33,33 @@
         </div>
       </div>
     </nav>
-
-    <div class="container-fluid d-flex justify-content-evenly" id="main">
+    <!-- main section -->
+    <div class="container-fluid d-flex" id="main">
       <div class="row mx-2">
         <div class="col align-self-center">
           <h1 class="ml3">I create a feeling through photographs.</h1>
         </div>
       </div>
-      <div class="row mx-2">
-        <div class="col" id="img-container">
+      <div class="row mx-2 justify-content-center">
+        <div class="col" id="main-img-container">
           <div id="main-img"></div>
         </div>
       </div>
     </div>
-    
-    <div id="about"></div>
+    <!-- about section -->
+    <div class="container-fluid d-flex" id="about">
+      <div class="row">
+        <div class="col-8 offset-md-1" id="profile-img-container">
+          <div id="profile-img"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-content-center" id="about-text">
+        <div class="col-10">
+          <h2>My Story</h2>
+          <p>My name is Cassidy. I am a fun-loving photographer who strives to get the most beautiful, natural photos of you in your element. My passion is to capture moments and memories you can hold onto forever. <br/> When it comes to me as a photographer, you will find I am very outgoing and passionate about my work. I aim to make you as comfortable as possible and for you to enjoy your time getting pictures taken! I have a very adventurous and creative mind that allows me to help brainstorm ideas with you for your photoshoot! I love to hear your ideas too; this helps me picture what you are looking for. </p>
+        </div>
+      </div>
+    </div>
     <div id="gallery"></div>
     <div id="rates"></div>
     <div id="contact"></div>
@@ -68,10 +80,8 @@
           opacity: [0,1],
           easing: "easeInOutQuad",
           duration: 1500,
-          delay: (el, i) => 150 * (i+1)
-
+          delay: (el, i) => 100 * (i+1)
         });
       </script>
   </body>
-
 </html>
