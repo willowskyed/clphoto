@@ -1,8 +1,61 @@
 html {
   font-size: 16px;
+  overflow: hidden;
+}
+
+/* parallax scrolling */
+body {
+  margin: 0;
+  color: #ffffff;
+  height: 100vh;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-wrapper {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.parallax-wrapper::before {
+  content: "";
+  background-image: url("../images/background-1.jpg");
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
+
+.regular-wrapper {
+  width: 100vw;
+  height: 75vh;
+  z-index: 2;
+  position: relative;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 50px;
+  width: 50%;
 }
 
 /* navbar */
+.navbar {
+  background-color: white;
+}
+
 .navbar-brand {
   font-family: 'Cinzel', serif;
   color: black;
@@ -100,13 +153,14 @@ h1 {
 
 /* about section */
 #about {
-  margin-top: 6rem;
+  margin-top: 3rem;
   width: 90vw;
   height: 100vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #about {
+    margin-top: 6rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -125,14 +179,12 @@ h1 {
   min-height: 70vh;
   max-height: 80vh;
   padding: 0;
-  margin-right: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #profile-img-container {
-    min-width: 70%;
+    min-width: 50%;
     max-width: 80%;
-    margin-top: 3rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -141,8 +193,7 @@ h1 {
 
 @media (min-width: 992px) {
   #profile-img-container {
-    min-width: 50vw;
-    max-height: 90vh;
+    min-height: 90%;
   }
 }
 
@@ -157,18 +208,18 @@ h1 {
 
 #about-text {
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 40vw;
-  padding-right: 2rem;
-  margin-left: -4rem;
 }
 
 @media (max-width: 768px) {
   #about-text {
     max-width: 90%;
     margin-top: 4rem;
-    margin-left: 0;
-    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

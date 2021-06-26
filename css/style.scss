@@ -1,10 +1,53 @@
-$primary-color:pink;
-
 html {
     font-size: 16px;
+    overflow: hidden;
+}
+
+/* parallax scrolling */
+
+body {
+    margin: 0;
+    color: #ffffff;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax-wrapper::before {
+    content:"";
+    background-image: url("../images/background-1.jpg");
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+.regular-wrapper {
+    width: 100vw;
+    height: 75vh;
+    z-index: 2;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
 }
 
 /* navbar */
+
+.navbar {
+    background-color: white;
+}
 
 .navbar-brand {
     font-family: 'Cinzel', serif;
@@ -76,10 +119,11 @@ h1 {
 /* about section */
 
 #about {
-    margin-top: 6rem;
+    margin-top: 3rem;
     width: 90vw;
     height: 100vh;
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+        margin-top: 6rem;
         flex-direction: column;
         width: 100vw;
     }
@@ -93,16 +137,13 @@ h1 {
     min-height: 70vh;
     max-height: 80vh;
     padding: 0;
-    margin-right: 0;
-    @media (max-width: 600px) {
-        min-width: 70%;
+    @media (max-width: 768px) {
+        min-width: 50%;
         max-width: 80%;
-        margin-top: 3rem;
         justify-content: center;
     }
     @media (min-width: 992px) {
-        min-width: 50vw;
-        max-height: 90vh;
+        min-height: 90%;
     }
 }
 
@@ -117,14 +158,12 @@ h1 {
 
 #about-text {
     font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
     text-align: center;
+    justify-content: center;
     min-width: 40vw;
-    padding-right: 2rem;
-    margin-left: -4rem;
     @media (max-width: 768px) {
         max-width: 90%;
         margin-top: 4rem;
-        margin-left: 0;
-        padding-right: 0;
     }
 }
