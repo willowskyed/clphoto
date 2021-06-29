@@ -1,78 +1,96 @@
 html {
   font-size: 16px;
-  overflow: hidden;
+  height: 100%;
 }
 
 /* parallax scrolling */
-body {
-  margin: 0;
-  color: #ffffff;
+.main-container {
   height: 100vh;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  -webkit-perspective: 2px;
+          perspective: 2px;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
-.parallax-wrapper {
-  width: 100vw;
-  height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.parallax-wrapper::before {
-  content: "";
-  background-image: url("../images/background-1.jpg");
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
-}
-
-.regular-wrapper {
-  width: 100vw;
-  height: 75vh;
-  z-index: 2;
+.section {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
-.content {
-  margin: 0 auto;
-  padding: 50px;
-  width: 50%;
+.static-one {
+  background-color: #ebbe88;
+}
+
+.static-two {
+  background-color: #d99771;
+}
+
+.static-three {
+  background-color: #f5e0a6;
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  -webkit-transform: translateZ(-1px) scale(1.7);
+          transform: translateZ(-1px) scale(1.7);
+  z-index: -1;
+}
+
+.parallax-one::after {
+  background-image: url("../images/carousel-1.jpg");
+}
+
+.parallax-two::after {
+  background-image: url("../images/carousel-2.jpg");
+}
+
+@media (max-width: 768px) {
+  .parallax-one::after, .parallax-two::after {
+    background-position: center;
+  }
 }
 
 /* navbar */
-.navbar {
-  background-color: white;
+nav {
+  background-color: transparent !important;
+  padding-bottom: 0;
+  margin-bottom: -4rem;
+  height: 4rem;
 }
 
 .navbar-brand {
   font-family: 'Cinzel', serif;
-  color: black;
+  color: white;
 }
 
 #navbarDropdownMenuLink {
-  color: black;
+  color: white;
   background-color: none;
   outline: none !important;
   border: none !important;
 }
 
-#navbarDropdownMenuLink:hover {
+/* nav functionality */
+.dropdown:hover > .dropdown-menu {
+  display: block;
   outline: none !important;
 }
 
-#navbarDropdownMenuLink:active {
+.dropdown > .dropdown-toggle:active {
   outline: none !important;
 }
 
@@ -80,11 +98,14 @@ body {
 h1 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  color: white;
 }
 
 #main {
   height: 100vh;
-  width: 90vw;
+  width: 100vw;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -95,6 +116,7 @@ h1 {
             flex-direction: column;
     width: 100vw;
     text-align: center;
+    margin-top: 4rem;
   }
 }
 
@@ -104,7 +126,7 @@ h1 {
   display: inline-flex;
   overflow: hidden;
   width: 50vw;
-  height: 90vh;
+  height: 85vh;
   padding: 0;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -115,7 +137,8 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
+    max-height: 70%;
   }
 }
 
@@ -154,18 +177,22 @@ h1 {
 /* about section */
 #about {
   margin-top: 3rem;
-  width: 90vw;
+  margin-bottom: 3rem;
+  width: 100vw;
   height: 100vh;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
   #about {
-    margin-top: 6rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2rem;
   }
 }
 
@@ -183,11 +210,13 @@ h1 {
 
 @media (max-width: 768px) {
   #profile-img-container {
-    min-width: 50%;
-    max-width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 60%;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -206,20 +235,27 @@ h1 {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  #profile-img {
+    max-width: 50%;
+    max-height: 70%;
+  }
+}
+
 #about-text {
+  color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   min-width: 40vw;
 }
 
 @media (max-width: 768px) {
   #about-text {
-    max-width: 90%;
-    margin-top: 4rem;
+    max-height: 40%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    padding-bottom: 14rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
