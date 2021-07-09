@@ -4,34 +4,29 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- bootstrap css -->
+    <!-- bootstrap & owl css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- fonts -->
+    <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <!-- title -->
     <title>CassiLeigh Photography</title>
   </head>
 
   <body>
     <main class="main-container">
-      <!-- navigation -->
+    <!-- navigation -->
     <nav class="navbar sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#home">CassiLeigh Photography</a>
-        <div class="dropdown">
-          <button class="btn btn-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#about">About</a>
-            <a class="dropdown-item" href="#gallery">Gallery</a>
-            <a class="dropdown-item" href="#packages">Packages</a>
-            <a class="dropdown-item" href="#contact">Contact</a>
-          </div>
-        </div>
+      <a class="navbar-brand" href="#home">CassiLeigh Photography</a>
+      <div class="nav">
+        <button class="btn btn-link" href="#" id="navToggler" role="button"><i class="fas fa-ellipsis-v"></i></button>
+        <a class="nav-link hide" href="#about">About</a>
+        <a class="nav-link hide" href="#gallery">Gallery</a>
+        <a class="nav-link hide" href="#packages">Packages</a>
+        <a class="nav-link hide" href="#contact">Contact</a>
       </div>
     </nav>
       <section class="section static static-one">
@@ -59,7 +54,7 @@
           </div>
         </div>
         <div class="row justify-content-center justify-content-md-start align-content-center" id="about-text">
-          <div class="col-10">
+          <div class="col-10 zoom">
             <h2>My Story</h2>
             <p>My name is Cassidy. I am a fun-loving photographer who strives to get the most beautiful, natural photos of you in your element. My passion is to capture moments and memories you can hold onto forever. <br/> When it comes to me as a photographer, you will find I am very outgoing and passionate about my work. I aim to make you as comfortable as possible and for you to enjoy your time getting pictures taken! I have a very adventurous and creative mind that allows me to help brainstorm ideas with you for your photoshoot! I love to hear your ideas too; this helps me picture what you are looking for. </p>
           </div>
@@ -67,22 +62,43 @@
       </div>
       </section>
       <section class="section parallax parallax-two"></section>
-      <section class="section static static-three"></section>
+      <section class="section static static-three">
+        <!-- gallery section -->
+        <div class="container-fluid" id="gallery">
+          <div id="owl-demo" class="owl-carousel">
+            <div class="item"><img src="images/g-1.jpg" alt="Image 1"></div>
+            <div class="item"><img src="images/g-2.jpg" alt="Image 2"></div>
+            <div class="item"><img src="images/g-3.jpg" alt="Image 3"></div>
+            <div class="item"><img src="images/g-4.jpg" alt="Image 4"></div>
+            <div class="item"><img src="images/g-5.jpg" alt="Image 5"></div>
+            <div class="item"><img src="images/g-6.jpg" alt="Image 6"></div>
+            <div class="item"><img src="images/g-7.jpg" alt="Image 7"></div>
+            <div class="item"><img src="images/g-8.jpg" alt="Image 8"></div>
+            <div class="item"><img src="images/g-9.jpg" alt="Image 9"></div>
+            <div class="item"><img src="images/g-10.jpg" alt="Image 10"></div>
+            <div class="item"><img src="images/g-11.jpg" alt="Image 11"></div>
+            <div class="item"><img src="images/g-12.jpg" alt="Image 12"></div>
+            <div class="item"><img src="images/g-13.jpg" alt="Image 13"></div>
+            <div class="item"><img src="images/g-14.jpg" alt="Image 14"></div>
+            <div class="item"><img src="images/g-15.jpg" alt="Image 15"></div>
+          </div>
+        </div>
+      </section>
+      
     </main>
     
-    
-
-    <div id="gallery"></div>
     <div id="rates"></div>
     <div id="contact"></div>
 
 
-    <!-- jquery, popper, javascript & anime -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- js function -->
+    <!-- jquery, popper, anime & owl js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" type="text/javascript" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" type="text/javascript"></script>
+    <script src="owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+    <!-- custom js -->
     <script>
+      // header effect
       var textWrapper = document.querySelector('.ml3');
       textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   
@@ -94,6 +110,47 @@
           duration: 1500,
           delay: (el, i) => 100 * (i+1)
         });
+      // zoom effect
+      const zoomElement = document.querySelector(".zoom");
+      let zoom = 0.8;
+      const zoom_speed = 0.006;
+
+      document.addEventListener("wheel", function(e) {
+        if (e.deltaY > 0) {
+          zoomElement.style.transform = `scale(${zoom += zoom_speed})`;
+        } else {
+          zoomElement.style.transform = `scale(${zoom -= zoom_speed})`;
+        }
+      });
+      // owl carousel
+      $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+          autoplay: 1000,
+          responsiveClass:true,
+          responsive:{
+            0:{
+              items:2,
+              loop:true,
+              nav:false
+            },
+            600:{
+              items:3,
+              loop:true,
+              nav:false
+            },
+            800:{
+              items:4,
+              loop:true,
+              nav:false
+            },
+            1000:{
+              items:5,
+              loop:true,
+              nav:false
+            }
+          }
+        });
+      });
       </script>
   </body>
 </html>

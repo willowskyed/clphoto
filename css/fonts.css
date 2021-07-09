@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Raleway-ExtraLight", sans-serif;
+    src: url("../fonts/Raleway-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "Raleway-Light", sans-serif;
+    src: url("../fonts/Raleway-Light.ttf");
+}
+@font-face {
+    font-family: "Raleway-Medium", sans-serif;
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+@font-face {
+    font-family: "Raleway-SemiBold", sans-serif;
+    src: url("../fonts/Raleway-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Cinzel", serif;
+    src: url("../fonts/Cinzel-Regular.ttf");
+}
