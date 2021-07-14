@@ -4,6 +4,72 @@ html {
   height: 100%;
 }
 
+@-webkit-keyframes slowZoom {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes slowZoom {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
 /* parallax scrolling */
 .main-container {
   height: 100vh;
@@ -32,12 +98,20 @@ html {
 
 .static-two {
   background-color: #d99771;
-  min-height: 600px;
-  height: auto;
+}
+
+@media (max-width: 768px) {
+  .static-two {
+    height: 900px;
+  }
 }
 
 .static-three {
   background-color: #f5e0a6;
+}
+
+.static-four {
+  background-color: #cf9c5b;
 }
 
 .parallax::after {
@@ -59,6 +133,10 @@ html {
 
 .parallax-two::after {
   background-image: url("../images/parallax-2.jpg");
+}
+
+.parallax-three::after {
+  background-image: url("../images/parallax-3.jpg");
 }
 
 @media (max-width: 768px) {
@@ -165,28 +243,6 @@ h1 {
           animation: slowZoom 4s linear forwards;
 }
 
-@-webkit-keyframes slowZoom {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-}
-
-@keyframes slowZoom {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-}
-
 /* about section */
 #about {
   width: 100vw;
@@ -210,10 +266,12 @@ h1 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   overflow: hidden;
-  min-width: 40vw;
-  max-width: 50vw;
+  min-width: 50vw;
+  max-width: 70vw;
   min-height: 80vh;
   max-height: 90vh;
+  margin-left: 5rem;
+  margin-right: 0;
   padding: 0;
 }
 
@@ -222,10 +280,12 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-height: 60%;
-    max-width: 60%;
-    padding-top: 3rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    min-height: 100vh;
+    margin: 0;
     margin-bottom: -2rem;
+    padding-top: 2rem;
   }
 }
 
@@ -256,26 +316,60 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1rem;
   text-align: center;
-  min-width: 40vw;
+  min-width: 50vw;
+  margin-left: -2rem;
+  margin-right: 5rem;
 }
 
 @media (max-width: 768px) {
   #about-text {
     max-height: 40%;
     width: 100%;
-    font-size: 1rem;
-    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: -4rem;
   }
 }
 
 /* carousel */
 #owl-demo .item {
+  height: 60vh;
   width: 100%;
-  height: 50vh;
+  padding: 0.2rem;
 }
 
-#owl-demo .item img {
-  display: block;
-  padding: 0.2rem;
+#owl-demo .item img:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  padding-top: 2rem;
+}
+
+/* packages section */
+h3 {
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  background-color: transparent;
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  -webkit-animation: zoomOut 1s linear forwards;
+          animation: zoomOut 1s linear forwards;
+}
+
+.card:hover {
+  -webkit-animation: zoomIn 1s linear forwards;
+          animation: zoomIn 1s linear forwards;
 }
 /*# sourceMappingURL=style.css.map */
