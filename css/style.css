@@ -139,8 +139,12 @@ html {
   background-image: url("../images/parallax-3.jpg");
 }
 
+.parallax-four::after {
+  background-image: url("../images/parallax-4.jpg");
+}
+
 @media (max-width: 768px) {
-  .parallax-one::after, .parallax-two::after {
+  .parallax-one::after, .parallax-two::after, .parallax-three::after, .parallax-four::after {
     background-position: center;
   }
 }
@@ -325,20 +329,20 @@ h1 {
   #about-text {
     max-height: 40%;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     margin-top: -4rem;
   }
 }
 
 /* carousel */
-#owl-demo .item {
+.item {
   height: 60vh;
   width: 100%;
-  padding: 0.2rem;
+  padding: 0.5rem;
 }
 
-#owl-demo .item img:hover {
+.item:hover {
   cursor: pointer;
 }
 
@@ -351,19 +355,36 @@ h2 {
 }
 
 /* packages section */
-h3 {
+#packages {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#p {
   font-family: 'Raleway-ExtraLight', sans-serif;
   color: white;
   font-size: 2rem;
+  width: 10vw;
   padding-bottom: 2rem;
+  left: 50%;
+  position: absolute;
 }
 
 .card {
+  display: inline-block;
   background-color: transparent;
   font-family: 'Raleway-ExtraLight', sans-serif;
-  border-color: white;
+  width: 25vw;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
   color: white;
   cursor: pointer;
+  border-color: white;
+  border-radius: 10px;
+  white-space: normal;
   -webkit-animation: zoomOut 1s linear forwards;
           animation: zoomOut 1s linear forwards;
 }
@@ -371,5 +392,47 @@ h3 {
 .card:hover {
   -webkit-animation: zoomIn 1s linear forwards;
           animation: zoomIn 1s linear forwards;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 20vw;
+  }
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* horizontal scrollbar */
+.static-four {
+  /* Firefox */
+  /* Chrome, Edge, and Safari */
+}
+
+.static-four * {
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
+}
+
+.static-four *::-webkit-scrollbar {
+  width: 5px;
+}
+
+.static-four *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.static-four *::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=style.css.map */
