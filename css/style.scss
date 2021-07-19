@@ -1,135 +1,42 @@
-@use 'fonts.css';
+@import 'fonts.css';
+@import 'functionality.css';
 
 html {
     font-size: 16px;
     height: 100%;
 }
 
-@keyframes slowZoom {
-    0% {
-        transform: scale(1,1);
-    }
-    100% {
-        transform: scale(1.1,1.1);
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(1,1);
-    }
-    100% {
-        transform: scale(1.05,1.05);
-    }
-}
-@keyframes zoomOut {
-    0% {
-        transform: scale(1.05,1.05);
-    }
-    100% {
-        transform: scale(1,1);
-    }
-}
-
-/* parallax scrolling */
-
-.main-container {
-    height: 100vh;
-    perspective: 2px;
-    overflow-x: hidden;
-}
-.section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-.static-one {
-    background-color: #ebbe88;
-}
-.static-two {
-    background-color: #d99771;
-    @media (max-width: 768px) {
-        height: 900px;
-    }
-}
-.static-three {
-    background-color: #f5e0a6;
-}
-.static-four {
-    background-color: #cf9c5b;
-}
-.parallax::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    transform: translateZ(-1px) scale(1.7);
-    z-index: -1;
-}
-.parallax-one::after {
-    background-image: url("../images/parallax-1.jpg");
-}
-.parallax-two::after {
-    background-image: url("../images/parallax-2.jpg");
-}
-.parallax-three::after {
-    background-image: url("../images/parallax-3.jpg");
-}
-.parallax-four::after {
-    background-image: url("../images/parallax-4.jpg");
-}
-
-@media (max-width: 768px) {
-    .parallax-one::after, .parallax-two::after, .parallax-three::after, .parallax-four::after {
-        background-position: center;
-    }
-}
-
 /* navbar */
 
 nav {
     background-color: transparent !important;
-    padding-bottom: 0;
     margin-bottom: -4rem;
-    height: 4rem;
 }
 
 .navbar-brand {
     font-family: 'Cinzel', serif;
     color: white;
     padding-left: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
     &:hover {
         color: #d99771;
     }
 }
 
-#navToggler {
+.nav-link {
+    font-family:  'Raleway-ExtraLight', sans-serif;
     color: white;
-    background-color: none;
-    outline: none !important;
-    border: none !important;
+    font-size: 1rem;
+    &:hover {
+        color: #d99771;
+    }
 }
 
-/* nav functionality */
+/* nav functionality */ 
 
-.hide {
-    display: none;
-    font-family: 'Raleway-Medium', sans-serif;
-}
-
-#navToggler:hover ~ .hide {
-    display: inline-block;
-    color: white;
-}
-
-#navToggler:hover {
-    display: none;
-}
 
 /* main section */
 
@@ -137,13 +44,13 @@ h1 {
     font-family: 'Raleway-ExtraLight', sans-serif;
     text-align: center;
     color: white;
+    margin-top: -2rem;
 }
 
 #main {
     height: 100vh;
     width: 100vw;
-    margin: 3rem;
-    padding-top: 4rem;
+    margin: 10rem 1rem 2rem;
     @media (max-width: 768px) {
         flex-direction: column;
         width: 100vw;
@@ -267,13 +174,13 @@ h2 {
     white-space: nowrap;
 }
 
-#p {
+h3 {
     font-family: 'Raleway-ExtraLight', sans-serif;
     color: white;
     font-size: 2rem;
-    width: 10vw;
+    width: 100vw;
     padding-bottom: 2rem;
-    left: 50%;
+    text-align: center;
     position: absolute;
 }
 
@@ -327,5 +234,157 @@ h2 {
         background-color: transparent;
         border-radius: 20px;
         border: 1px solid white;
+    }
+}
+
+/* contact section */
+
+#contact-text {
+    font-family: 'Raleway-ExtraLight', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#email {
+    font-family: 'Raleway-SemiBold', sans-serif;
+    font-size: 1rem;
+}
+
+.fa-instagram {
+    font-size: 2rem;
+    color: white;
+}
+
+#contact-form {
+    width: 50vw;
+    @media (max-width: 768px) {
+        width: 90vw;
+    }
+}
+
+.form-control {
+    font-family: "Raleway-LightItalic", sans-serif;
+    background-color: #acbfa4;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    &:focus {
+        border-color: white;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #586652;
+    }
+}
+
+.form-label {
+    font-family: 'Raleway-Medium', sans-serif;
+    color: white;
+}
+
+.btn-outline-light {
+    border-radius: 10px;
+    &:hover {
+        background-color: white;
+        color: #acbfa4;
+    }
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+footer p {
+    font-family: "Raleway-LightItalic", sans-serif;
+    color: white;
+    font-size: 0.75rem;
+}
+
+#logo {
+    height: 80%;
+}
+
+/* parallax scrolling */
+
+.main-container {
+    height: 100vh;
+    perspective: 2px;
+    overflow-x: hidden;
+}
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.static-one {
+    background-color: #ebbe88;
+}
+.static-two {
+    background-color: #d99771;
+    @media (max-width: 768px) {
+        height: 900px;
+    }
+}
+.static-three {
+    background-color: #f5e0a6;
+}
+.static-four {
+    background-color: #cf9c5b;
+}
+.static-five {
+    background-color: #acbfa4;
+    @media (max-width: 768px) {
+        height: 700px;
+    }
+}
+.static-six {
+    background: rgb(236,173,88);
+    background: linear-gradient(0deg, rgba(236,173,88,1) 0%, rgba(245,228,193,1) 100%);
+}
+.parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    transform: translateZ(-1px) scale(1.7);
+    z-index: -1;
+}
+.parallax-one::after {
+    background-image: url("../images/parallax-1.jpg");
+}
+.parallax-two::after {
+    background-image: url("../images/parallax-2.jpg");
+}
+.parallax-three::after {
+    background-image: url("../images/parallax-3.jpg");
+}
+.parallax-four::after {
+    background-image: url("../images/parallax-4.jpg");
+}
+.parallax-five::after {
+    background-image: url("../images/parallax-5.jpg");
+}
+
+@media (max-width: 768px) {
+    .parallax-one::after, .parallax-two::after, .parallax-three::after, .parallax-four::after, .parallax-five::after {
+        background-position: center;
     }
 }
