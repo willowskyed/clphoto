@@ -17,17 +17,18 @@
   </head>
 
   <body>
-    <!-- preload images before page renders -->
+    
     <div class="hidden">
       <script type="text/javascript">
-          var images = new Array()
-          function preload() {
-            for (i = 0; i < preload.arguments.length; i++) {
-              images[i] = new Image()
-              images[i].src = preload.arguments[i]
-            }
+      // preload images before page renders
+        var images = new Array()
+        function preload() {
+          for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
           }
-          preload(
+        }
+        preload(
             "images/first-img.jpg",
             "images/profile.jpg",
             "images/g-1.jpg",
@@ -35,22 +36,29 @@
             "images/g-3.jpg",
             "images/g-4.jpg"
           )
-        //--><!]]>
+      //--><!]]> 
       </script>
     </div>
 
     <main class="main-container">
-    <!-- navigation -->
-    <nav class="navbar sticky-top">
-      <a class="navbar-brand" href="#home">CassiLeigh Photography</a>
-      <div class="nav">
-        <!-- <button class="btn btn-link" href="#" id="navToggler" role="button"><i class="fas fa-ellipsis-v"></i></button> -->
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#gallery">Gallery</a>
-        <a class="nav-link" href="#packages">Packages</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </div>
-    </nav>
+      <!-- navigation -->
+      <header>
+        <span class="toggle-button">
+              <div class="menu-bar menu-bar-top"></div>
+              <div class="menu-bar menu-bar-middle"></div>
+              <div class="menu-bar menu-bar-bottom"></div>
+            </span>
+        <div class="menu-wrap">
+          <div class="menu-sidebar">
+            <ul class="menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>			
+          </div>
+        </div>
+      </header>
       <!-- main section -->
       <section class="section static static-one">
       <div class="container-fluid d-flex" id="main">
@@ -104,7 +112,7 @@
             <div class="item"><img class="owl-lazy" data-src="images/g-14.jpg"></div>
             <div class="item"><img class="owl-lazy" data-src="images/g-15.jpg"></div>
           </div>
-          <h2>Candid moments that show your true, fun-loving selves.</h2>
+          <h2>Candid moments that radiate love.</h2>
         </div>
       </section>
       <section class="section parallax parallax-three"></section>
@@ -207,8 +215,27 @@
             delay: (el, i) => 100 * (i+1)
             });
     });
-    // nav effect 
+    // nav functionality
+    $(document).ready(function() {
 
+      var $toggleButton = $('.toggle-button'),
+          $menuWrap = $('.menu-wrap'),
+          $sidebarArrow = $('.sidebar-menu-arrow');
+
+      // Hamburger button
+
+      $toggleButton.on('click', function() {
+        $(this).toggleClass('button-open');
+        $menuWrap.toggleClass('menu-show');
+      });
+
+      // Sidebar navigation arrows
+
+      $sidebarArrow.click(function() {
+        $(this).next().slideToggle(300);
+      });
+
+      });
     // zoom effect
 
     // owl carousel
