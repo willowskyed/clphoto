@@ -40,28 +40,29 @@
       </script>
     </div>
 
-    <main class="main-container">
-      <!-- navigation -->
-      <header>
-        <span class="toggle-button">
-              <div class="menu-bar menu-bar-top"></div>
-              <div class="menu-bar menu-bar-middle"></div>
-              <div class="menu-bar menu-bar-bottom"></div>
-            </span>
-        <div class="menu-wrap">
-          <div class="menu-sidebar">
-            <ul class="menu">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Packages</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>			
-          </div>
+    <!-- navigation -->
+    <header class="sticky-top" id="header">
+      <span class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+          </span>
+      <div class="menu-wrap">
+        <div class="menu-sidebar">
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>			
         </div>
-      </header>
-      <!-- main section -->
+      </div>
+      <a id="navbrand" href="#hero">CassiLeigh Photography</a>
+    </header>
+    <main class="main-container">
+      <!-- hero section -->
       <section class="section static static-one">
-      <div class="container-fluid d-flex" id="main">
+      <div class="container-fluid d-flex" id="hero">
         <div class="row mx-2">
           <div class="col align-self-center">
             <h1 class="ml3">I create a feeling through photographs.</h1>
@@ -217,25 +218,16 @@
     });
     // nav functionality
     $(document).ready(function() {
-
       var $toggleButton = $('.toggle-button'),
-          $menuWrap = $('.menu-wrap'),
-          $sidebarArrow = $('.sidebar-menu-arrow');
-
-      // Hamburger button
-
+          $menuWrap = $('.menu-wrap');
+    // Hamburger button
       $toggleButton.on('click', function() {
         $(this).toggleClass('button-open');
         $menuWrap.toggleClass('menu-show');
       });
+    });
+    // shrink on scroll
 
-      // Sidebar navigation arrows
-
-      $sidebarArrow.click(function() {
-        $(this).next().slideToggle(300);
-      });
-
-      });
     // zoom effect
 
     // owl carousel
