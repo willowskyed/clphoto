@@ -389,6 +389,12 @@ h1 {
   padding: 0;
 }
 
+@media (max-width: 480px) {
+  #profile-img-container {
+    max-height: 50vh;
+  }
+}
+
 @media (max-width: 768px) {
   #profile-img-container {
     -webkit-box-pack: center;
@@ -786,9 +792,21 @@ footer p {
   background-color: #f5e0a6;
 }
 
+@media (max-width: 480px) {
+  .static-three {
+    height: 60vh;
+  }
+}
+
 /* packages */
 .static-four {
   background-color: #cf9c5b;
+}
+
+@media (max-width: 480px) {
+  .static-four {
+    height: 60vh;
+  }
 }
 
 /* contact */
@@ -807,6 +825,12 @@ footer p {
   background: #ecad58;
   background: -webkit-gradient(linear, left bottom, left top, from(#ecad58), to(#f5e4c1));
   background: linear-gradient(0deg, #ecad58 0%, #f5e4c1 100%);
+}
+
+@media (max-width: 480px) {
+  .static-six {
+    height: 60vh;
+  }
 }
 
 .parallax::after {

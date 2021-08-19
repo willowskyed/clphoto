@@ -260,6 +260,9 @@ h1 {
     margin-left: 5rem;
     margin-right: 0;
     padding: 0;
+    @media (max-width: 480px) {
+        max-height: 50vh;
+    }
     @media (max-width: 768px) {
         justify-content: center;
         align-content: center;
@@ -550,10 +553,16 @@ footer p {
 /* gallery */
 .static-three {
     background-color: #f5e0a6;
+    @media (max-width: 480px) {
+        height: 60vh;
+    }
 }
 /* packages */
 .static-four {
     background-color: #cf9c5b;
+    @media (max-width: 480px) {
+        height: 60vh;
+    }
 }
 /* contact */
 .static-five {
@@ -566,6 +575,9 @@ footer p {
 .static-six {
     background: rgb(236,173,88);
     background: linear-gradient(0deg, rgba(236,173,88,1) 0%, rgba(245,228,193,1) 100%);
+    @media (max-width: 480px) {
+        height: 60vh;
+    }
 }
 .parallax::after {
     content: "";
