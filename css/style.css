@@ -391,7 +391,7 @@ h1 {
 
 @media (max-width: 480px) {
   #profile-img-container {
-    height: 40vh;
+    max-height: 40vh;
   }
 }
 
@@ -420,6 +420,12 @@ h1 {
   min-width: 70%;
   max-width: 100%;
   border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  #profile-img {
+    max-height: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -529,7 +535,7 @@ h5 {
 @media (max-width: 580px) {
   .flip-card {
     width: 40vw;
-    height: 60vh;
+    height: 50vh;
   }
 }
 
@@ -801,7 +807,7 @@ footer p {
 
 @media (max-width: 480px) {
   .static-three {
-    height: 70vh;
+    height: 60vh;
   }
 }
 
@@ -812,7 +818,7 @@ footer p {
 
 @media (max-width: 480px) {
   .static-four {
-    height: 80vh;
+    height: 70vh;
   }
 }
 

@@ -261,7 +261,7 @@ h1 {
     margin-right: 0;
     padding: 0;
     @media (max-width: 480px) {
-        height: 40vh;
+        max-height: 40vh;
     }
     @media (max-width: 768px) {
         justify-content: center;
@@ -280,6 +280,9 @@ h1 {
     min-width: 70%;
     max-width: 100%;
     border-radius: 50%;
+    @media (max-width: 480px) {
+        max-height: 50%;
+    }
     @media (max-width: 768px) {
         max-width: 50%;
         max-height: 70%;
@@ -366,7 +369,7 @@ h5 {
     perspective: 1000px;
     @media (max-width: 580px) {
         width: 40vw;
-        height: 60vh;
+        height: 50vh;
     } 
     @media (min-width: 581px) {
         width: 35vw;
@@ -558,14 +561,14 @@ footer p {
 .static-three {
     background-color: #f5e0a6;
     @media (max-width: 480px) {
-        height: 70vh;
+        height: 60vh;
     }
 }
 /* packages */
 .static-four {
     background-color: #cf9c5b;
     @media (max-width: 480px) {
-        height: 80vh;
+        height: 70vh;
     }
 }
 /* contact */
