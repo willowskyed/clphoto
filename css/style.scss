@@ -266,7 +266,7 @@ h1 {
     @media (max-width: 768px) {
         justify-content: center;
         align-content: center;
-        min-height: 80vh;
+        max-height: 80vh;
         margin: 2rem 0 0.5rem 0;
     }
     @media (min-width: 992px) {
@@ -281,6 +281,7 @@ h1 {
     max-width: 100%;
     border-radius: 50%;
     @media (max-width: 480px) {
+        max-width: 50%;
         max-height: 50%;
     }
     @media (max-width: 768px) {
@@ -322,7 +323,7 @@ h2 {
     padding-top: 1rem;
     padding-bottom: 0.8rem;
     @media (max-width: 480px) {
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
 }
 
@@ -528,7 +529,7 @@ footer p {
     font-size: 0.75rem;
 }
 #logo {
-    max-height: 80%;
+    max-width: 80%;
 }
 
 /* parallax scrolling */
