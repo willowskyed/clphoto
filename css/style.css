@@ -444,7 +444,7 @@ h1 {
   font-family: 'Raleway-Light', sans-serif;
   font-weight: 300;
   text-align: center;
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 
 #about-text {
@@ -777,8 +777,7 @@ footer p {
 }
 
 #logo {
-  height: auto;
-  width: 100%;
+  min-height: 50vh;
   margin-bottom: 4rem;
 }
 
@@ -817,7 +816,7 @@ footer p {
 
 @media (max-width: 768px) {
   .static-two {
-    height: 1000px;
+    height: 1100px;
   }
 }
 
