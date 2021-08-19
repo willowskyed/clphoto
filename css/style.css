@@ -777,7 +777,7 @@ footer p {
 }
 
 #logo {
-  min-height: 50vh;
+  min-height: 70vh;
   margin-bottom: 4rem;
 }
 
@@ -809,6 +809,12 @@ footer p {
   background-color: #ebbe88;
 }
 
+@media (max-width: 768px) {
+  .static-one {
+    height: 900px;
+  }
+}
+
 /* about */
 .static-two {
   background-color: #d99771;
@@ -816,7 +822,7 @@ footer p {
 
 @media (max-width: 768px) {
   .static-two {
-    height: 1100px;
+    height: 1050px;
   }
 }
 
@@ -849,7 +855,7 @@ footer p {
 
 @media (max-width: 768px) {
   .static-five {
-    height: 700px;
+    height: 750px;
   }
 }
 

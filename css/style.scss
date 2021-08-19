@@ -543,7 +543,7 @@ footer p {
     font-size: 0.75rem;
 }
 #logo {
-    min-height: 50vh;
+    min-height: 70vh;
     margin-bottom: 4rem;
 }
 
@@ -565,12 +565,15 @@ footer p {
 /* hero */
 .static-one {
     background-color: #ebbe88;
+    @media (max-width: 768px) {
+        height: 900px;
+    }
 }
 /* about */
 .static-two {
     background-color: #d99771;
     @media (max-width: 768px) {
-        height: 1100px;
+        height: 1050px;
     }
 }
 /* gallery */
@@ -591,7 +594,7 @@ footer p {
 .static-five {
     background-color: #acbfa4;
     @media (max-width: 768px) {
-        height: 700px;
+        height: 750px;
     }
 }
 /* footer */
