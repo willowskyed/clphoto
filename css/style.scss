@@ -261,7 +261,7 @@ h1 {
     margin-right: 0;
     padding: 0;
     @media (max-width: 480px) {
-        max-height: 40vh;
+        max-height: 50%;
     }
     @media (max-width: 768px) {
         justify-content: center;
@@ -323,7 +323,7 @@ h2 {
     padding-top: 1rem;
     padding-bottom: 0.8rem;
     @media (max-width: 480px) {
-        margin-top: 7rem;
+        margin-top: 9rem;
     }
 }
 
@@ -530,6 +530,7 @@ footer p {
 }
 #logo {
     max-width: 80%;
+    max-height: 100vh;
 }
 
 /* parallax scrolling */

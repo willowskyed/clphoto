@@ -391,7 +391,7 @@ h1 {
 
 @media (max-width: 480px) {
   #profile-img-container {
-    max-height: 40vh;
+    max-height: 50%;
   }
 }
 
@@ -479,7 +479,7 @@ h2 {
 
 @media (max-width: 480px) {
   h2 {
-    margin-top: 7rem;
+    margin-top: 9rem;
   }
 }
 
@@ -760,6 +760,7 @@ footer p {
 
 #logo {
   max-width: 80%;
+  max-height: 100vh;
 }
 
 /* parallax scrolling */
