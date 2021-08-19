@@ -297,7 +297,7 @@ h1 {
     font-family: 'Raleway-Light', sans-serif;
     font-weight: 300;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 #about-text {
     color: white;
@@ -367,6 +367,9 @@ h5 {
 }
 .flip-card-back > .card-body {
     margin-top: 5rem;
+    @media (max-width: 480px) {
+        margin-top: 2rem;
+    }
 }
 .card-text-back {
     margin-top: 1rem;
@@ -541,6 +544,7 @@ footer p {
 }
 #logo {
     height: 100%;
+    width: auto;
     margin-bottom: 4rem;
 }
 
