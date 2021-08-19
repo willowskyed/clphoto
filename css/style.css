@@ -391,7 +391,9 @@ h1 {
 
 @media (max-width: 480px) {
   #profile-img-container {
-    max-height: 50%;
+    min-height: 40vh;
+    max-height: 50vh;
+    width: auto;
   }
 }
 
@@ -424,7 +426,7 @@ h1 {
 
 @media (max-width: 480px) {
   #profile-img {
-    max-width: 50%;
+    max-width: 40%;
     max-height: 50%;
   }
 }
@@ -479,7 +481,7 @@ h2 {
 
 @media (max-width: 480px) {
   h2 {
-    margin-top: 9rem;
+    margin-top: 11rem;
   }
 }
 
@@ -759,8 +761,8 @@ footer p {
 }
 
 #logo {
-  max-width: 80%;
-  max-height: 100vh;
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
 /* parallax scrolling */
