@@ -303,7 +303,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-size: 2rem;
   }
 }
@@ -689,7 +689,7 @@ h5 {
 
 @media (max-width: 768px) {
   #contact-text {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 }
 
@@ -811,7 +811,7 @@ footer p {
 
 @media (max-width: 768px) {
   .static-one {
-    height: 900px;
+    height: 800px;
   }
 }
 
