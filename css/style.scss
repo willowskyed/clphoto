@@ -261,7 +261,7 @@ h1 {
     margin-right: 0;
     padding: 0;
     @media (max-width: 480px) {
-        max-height: 50vh;
+        height: 40vh;
     }
     @media (max-width: 768px) {
         justify-content: center;
@@ -318,6 +318,9 @@ h2 {
     font-size: 1.2rem;
     padding-top: 1rem;
     padding-bottom: 0.8rem;
+    @media (max-width: 480px) {
+        margin-top: 3rem;
+    }
 }
 
 /* packages section */ 
@@ -363,6 +366,7 @@ h5 {
     perspective: 1000px;
     @media (max-width: 580px) {
         width: 40vw;
+        height: 40vh;
     } 
     @media (min-width: 581px) {
         width: 35vw;
@@ -521,7 +525,7 @@ footer p {
     font-size: 0.75rem;
 }
 #logo {
-    height: 80%;
+    max-height: 80%;
 }
 
 /* parallax scrolling */
@@ -575,9 +579,6 @@ footer p {
 .static-six {
     background: rgb(236,173,88);
     background: linear-gradient(0deg, rgba(236,173,88,1) 0%, rgba(245,228,193,1) 100%);
-    @media (max-width: 480px) {
-        height: 60vh;
-    }
 }
 .parallax::after {
     content: "";
