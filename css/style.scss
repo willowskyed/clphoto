@@ -200,7 +200,7 @@ h1 {
     color: white;
     font-size: 2.5rem;
     @media (max-width: 768px) {
-        margin-top: 3rem;
+        margin-top: 5rem;
         font-size: 2rem;
     }
 }
@@ -261,9 +261,10 @@ h1 {
     margin-right: 0;
     padding: 0;
     @media (max-width: 480px) {
-        min-height: 40vh;
-        max-height: 50vh;
+        min-height: 50vh;
+        max-height: 60vh;
         width: auto;
+        margin-bottom: 3rem;
     }
     @media (max-width: 768px) {
         justify-content: center;
@@ -325,7 +326,8 @@ h2 {
     padding-top: 1rem;
     padding-bottom: 0.8rem;
     @media (max-width: 480px) {
-        margin-top: 11rem;
+        margin-top: 12rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -487,6 +489,7 @@ h4 {
     width: 50vw;
     @media (max-width: 768px) {
         width: 90vw;
+        justify-content: center;
     }
 }
 .form-control {
@@ -558,7 +561,7 @@ footer p {
 .static-two {
     background-color: #d99771;
     @media (max-width: 768px) {
-        height: 1000px;
+        height: 1100px;
     }
 }
 /* gallery */
