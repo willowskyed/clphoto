@@ -292,6 +292,12 @@ h1 {
         max-height: 70%;
     }
 }
+#myStory {
+    font-size: 2rem;
+    font-family: 'Raleway-Regular', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
 #about-text {
     color: white;
     font-family: 'Raleway-Light', sans-serif;
@@ -489,7 +495,6 @@ h4 {
     width: 50vw;
     @media (max-width: 768px) {
         width: 90vw;
-        justify-self: center;
     }
 }
 .form-control {
@@ -534,8 +539,8 @@ footer p {
     font-size: 0.75rem;
 }
 #logo {
-    min-width: 90vw;
-    min-height: 90vh;
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
 /* parallax scrolling */
