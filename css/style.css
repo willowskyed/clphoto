@@ -393,7 +393,7 @@ h1 {
   #profile-img-container {
     min-height: 50vh;
     max-height: 60vh;
-    width: auto;
+    min-width: 50vw;
     margin-bottom: 3rem;
   }
 }
@@ -483,7 +483,7 @@ h2 {
 @media (max-width: 480px) {
   h2 {
     margin-top: 12rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -703,9 +703,8 @@ h4 {
 @media (max-width: 768px) {
   #contact-form {
     width: 90vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
@@ -766,8 +765,8 @@ footer p {
 }
 
 #logo {
-  max-width: 90vw;
-  max-height: 90vh;
+  min-width: 90vw;
+  min-height: 90vh;
 }
 
 /* parallax scrolling */

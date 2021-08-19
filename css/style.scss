@@ -263,7 +263,7 @@ h1 {
     @media (max-width: 480px) {
         min-height: 50vh;
         max-height: 60vh;
-        width: auto;
+        min-width: 50vw;
         margin-bottom: 3rem;
     }
     @media (max-width: 768px) {
@@ -327,7 +327,7 @@ h2 {
     padding-bottom: 0.8rem;
     @media (max-width: 480px) {
         margin-top: 12rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -489,7 +489,7 @@ h4 {
     width: 50vw;
     @media (max-width: 768px) {
         width: 90vw;
-        justify-content: center;
+        justify-self: center;
     }
 }
 .form-control {
@@ -534,8 +534,8 @@ footer p {
     font-size: 0.75rem;
 }
 #logo {
-    max-width: 90vw;
-    max-height: 90vh;
+    min-width: 90vw;
+    min-height: 90vh;
 }
 
 /* parallax scrolling */
