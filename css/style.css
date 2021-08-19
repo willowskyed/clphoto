@@ -303,7 +303,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    margin-top: 4rem;
+    margin: 4rem 0 2rem 0;
     font-size: 2rem;
   }
 }
@@ -778,7 +778,7 @@ footer p {
 
 #logo {
   min-height: 70vh;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 /* parallax scrolling */
