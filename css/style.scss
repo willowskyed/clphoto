@@ -298,7 +298,7 @@ h1 {
     font-weight: 300;
     text-align: center;
     @media (max-width: 768px) {
-        margin-top: 14rem;
+        margin-top: 12rem;
     }
 }
 #about-text {
@@ -386,7 +386,7 @@ h5 {
     perspective: 1000px;
     @media (max-width: 580px) {
         width: 40vw;
-        height: 60vh;
+        height: 50vh;
     } 
     @media (min-width: 581px) {
         width: 35vw;
@@ -582,14 +582,14 @@ footer p {
 .static-three {
     background-color: #f5e0a6;
     @media (max-width: 480px) {
-        height: 80vh;
+        height: 70vh;
     }
 }
 /* packages */
 .static-four {
     background-color: #cf9c5b;
     @media (max-width: 480px) {
-        height: 80vh;
+        height: 70vh;
     }
 }
 /* contact */
