@@ -71,7 +71,7 @@ section.scrolled #logo {
     width: 500px;
     margin: 1rem 2rem 0.5rem 0;
     font-family: Cinzel, serif;
-    font-weight: 400;
+    font-weight: normal;
     color: white;
     font-size: 1.8rem;
     text-decoration: none;
@@ -575,14 +575,14 @@ footer p {
 .static-two {
     background-color: #d99771;
     @media (max-width: 768px) {
-        height: 1050px;
+        height: 1080px;
     }
 }
 /* gallery */
 .static-three {
     background-color: #f5e0a6;
     @media (max-width: 480px) {
-        height: 70vh;
+        height: 60vh;
     }
 }
 /* packages */

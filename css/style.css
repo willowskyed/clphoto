@@ -136,7 +136,7 @@ section.scrolled #logo {
   width: 500px;
   margin: 1rem 2rem 0.5rem 0;
   font-family: Cinzel, serif;
-  font-weight: 400;
+  font-weight: normal;
   color: white;
   font-size: 1.8rem;
   text-decoration: none;
@@ -827,7 +827,7 @@ footer p {
 
 @media (max-width: 768px) {
   .static-two {
-    height: 1050px;
+    height: 1080px;
   }
 }
 
@@ -838,7 +838,7 @@ footer p {
 
 @media (max-width: 480px) {
   .static-three {
-    height: 70vh;
+    height: 60vh;
   }
 }
 
