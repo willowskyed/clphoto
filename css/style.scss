@@ -200,7 +200,7 @@ h1 {
     color: white;
     font-size: 2.5rem;
     @media (max-width: 768px) {
-        margin: 4rem 0 2rem 0;
+        margin: 3rem 0 2rem 0;
         font-size: 2rem;
     }
 }
@@ -298,7 +298,7 @@ h1 {
     font-weight: 300;
     text-align: center;
     @media (max-width: 768px) {
-        margin-top: 10rem;
+        margin-top: 14rem;
     }
 }
 #about-text {
@@ -386,7 +386,7 @@ h5 {
     perspective: 1000px;
     @media (max-width: 580px) {
         width: 40vw;
-        height: 50vh;
+        height: 60vh;
     } 
     @media (min-width: 581px) {
         width: 35vw;
@@ -582,14 +582,14 @@ footer p {
 .static-three {
     background-color: #f5e0a6;
     @media (max-width: 480px) {
-        height: 60vh;
+        height: 80vh;
     }
 }
 /* packages */
 .static-four {
     background-color: #cf9c5b;
     @media (max-width: 480px) {
-        height: 70vh;
+        height: 80vh;
     }
 }
 /* contact */

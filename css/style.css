@@ -303,7 +303,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    margin: 4rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
     font-size: 2rem;
   }
 }
@@ -448,7 +448,7 @@ h1 {
 
 @media (max-width: 768px) {
   #myStory {
-    margin-top: 10rem;
+    margin-top: 14rem;
   }
 }
 
@@ -559,7 +559,7 @@ h5 {
 @media (max-width: 580px) {
   .flip-card {
     width: 40vw;
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -838,7 +838,7 @@ footer p {
 
 @media (max-width: 480px) {
   .static-three {
-    height: 60vh;
+    height: 80vh;
   }
 }
 
@@ -849,7 +849,7 @@ footer p {
 
 @media (max-width: 480px) {
   .static-four {
-    height: 70vh;
+    height: 80vh;
   }
 }
 
