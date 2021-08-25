@@ -154,7 +154,7 @@ section.scrolled #logo {
 
 @media (max-width: 768px) {
   #brand {
-    left: 4rem;
+    left: 4.5rem;
     font-size: 1.4rem;
   }
 }
