@@ -563,7 +563,7 @@ h5 {
 @media (max-width: 580px) {
   .flip-card {
     width: 55vw;
-    height: 65vh;
+    height: 60vh;
   }
 }
 
@@ -853,7 +853,7 @@ footer p {
 
 @media (max-width: 480px) {
   .static-four {
-    height: 70vh;
+    height: 75vh;
   }
 }
 
