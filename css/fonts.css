@@ -13,7 +13,7 @@
 }
 /* raleway-100 - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-Thin', sans-serif;
     font-style: normal;
     font-weight: 100;
     src: url('../fonts/raleway-v22-latin-100.eot'); /* IE9 Compat Modes */
@@ -26,7 +26,7 @@
 }
 /* raleway-200 - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-ExtraLight', sans-serif;
     font-style: normal;
     font-weight: 200;
     src: url('../fonts/raleway-v22-latin-200.eot'); /* IE9 Compat Modes */
@@ -39,7 +39,7 @@
 }
 /* raleway-300 - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-Light', sans-serif;
     font-style: normal;
     font-weight: 300;
     src: url('../fonts/raleway-v22-latin-300.eot'); /* IE9 Compat Modes */
@@ -52,7 +52,7 @@
 }
 /* raleway-regular - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-Regular', sans-serif;
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/raleway-v22-latin-regular.eot'); /* IE9 Compat Modes */
@@ -65,7 +65,7 @@
 }
 /* raleway-500 - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-Medium', sans-serif;
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/raleway-v22-latin-500.eot'); /* IE9 Compat Modes */
@@ -78,7 +78,7 @@
 }
 /* raleway-100italic - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-ThinItalic', sans-serif;
     font-style: italic;
     font-weight: 100;
     src: url('../fonts/raleway-v22-latin-100italic.eot'); /* IE9 Compat Modes */
@@ -91,7 +91,7 @@
 }
 /* raleway-200italic - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-ExtraLightItalic', sans-serif;
     font-style: italic;
     font-weight: 200;
     src: url('../fonts/raleway-v22-latin-200italic.eot'); /* IE9 Compat Modes */
@@ -104,7 +104,7 @@
 }
 /* raleway-300italic - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-LightItalic', sans-serif;
     font-style: italic;
     font-weight: 300;
     src: url('../fonts/raleway-v22-latin-300italic.eot'); /* IE9 Compat Modes */
@@ -117,7 +117,7 @@
 }
 /* raleway-italic - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-Regular-Italic', sans-serif;
     font-style: italic;
     font-weight: 400;
     src: url('../fonts/raleway-v22-latin-italic.eot'); /* IE9 Compat Modes */
@@ -130,7 +130,7 @@
 }
 /* raleway-500italic - latin */
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-MediumItalic', sans-serif;
     font-style: italic;
     font-weight: 500;
     src: url('../fonts/raleway-v22-latin-500italic.eot'); /* IE9 Compat Modes */
