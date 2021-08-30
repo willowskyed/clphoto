@@ -422,7 +422,7 @@ h1 {
     min-height: 50vh;
     max-height: 70vh;
     min-width: 50vw;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 2rem 0;
   }
 }
 
@@ -475,7 +475,7 @@ h1 {
 
 @media (max-width: 500px) {
   #myStory {
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 }
 
@@ -854,7 +854,7 @@ footer p {
 
 @media (max-width: 500px) {
   .static-one {
-    height: 825px;
+    height: 850px;
   }
 }
 
