@@ -273,10 +273,11 @@ h1 {
     margin-right: 0;
     padding: 0;
     @media (max-width: 500px) {
+        justify-content: center;
         min-height: 50vh;
         max-height: 60vh;
         min-width: 50vw;
-        margin: 1rem 0 2rem 0;
+        margin: 3rem 0 0 0;
     }
     @media (min-width: 581px) and (max-width: 768px) {
         justify-content: center;

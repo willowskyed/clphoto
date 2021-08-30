@@ -414,10 +414,13 @@ h1 {
 
 @media (max-width: 500px) {
   #profile-img-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-height: 50vh;
     max-height: 60vh;
     min-width: 50vw;
-    margin: 1rem 0 2rem 0;
+    margin: 3rem 0 0 0;
   }
 }
 
