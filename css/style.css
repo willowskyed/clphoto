@@ -360,7 +360,7 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
     max-height: 75%;
-    margin-top: 1rem;
+    margin: 1rem 0 2rem 0;
   }
 }
 
@@ -500,6 +500,7 @@ h1 {
   #about-text {
     max-height: 40%;
     margin: -2rem 0 0 0;
+    width: 90vw;
   }
 }
 

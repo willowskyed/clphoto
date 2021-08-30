@@ -237,7 +237,7 @@ h1 {
     @media (max-width: 500px) {
         justify-content: center;
         max-height: 75%;
-        margin-top: 1rem;
+        margin: 1rem 0 2rem 0;
     }
     @media (min-width: 501px) and (max-width: 768px) {
         justify-content: center;
@@ -329,6 +329,7 @@ h1 {
     @media (max-width: 768px) {
         max-height: 40%;
         margin: -2rem 0 0 0;
+        width: 90vw;
     }
 }
 /* carousel */
