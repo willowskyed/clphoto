@@ -435,7 +435,7 @@ h1 {
     -ms-flex-line-pack: center;
         align-content: center;
     min-height: 80vh;
-    margin: 4rem 0 0.5rem 0;
+    margin: 4rem 0 0 0;
   }
 }
 
@@ -855,7 +855,7 @@ footer p {
 
 @media (max-width: 500px) {
   .static-one {
-    height: 875px;
+    height: 825px;
   }
 }
 
