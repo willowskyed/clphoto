@@ -310,7 +310,7 @@ h1 {
 
 @media (max-width: 500px) {
   h1 {
-    margin-top: 8rem;
+    margin-top: 6rem;
     font-size: 2rem;
   }
 }
@@ -359,7 +359,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-height: 75%;
+    max-height: 65%;
     margin: 1rem 0 1rem 0;
   }
 }
@@ -370,6 +370,7 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 60vw;
+    margin: 0 0 3rem 0;
   }
 }
 
@@ -858,7 +859,7 @@ footer p {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   .static-one {
     height: 725px;
   }
@@ -871,7 +872,7 @@ footer p {
 
 @media (max-width: 500px) {
   .static-two {
-    height: 1080px;
+    height: 1100px;
   }
 }
 
