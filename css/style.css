@@ -435,7 +435,7 @@ h1 {
     -ms-flex-line-pack: center;
         align-content: center;
     min-height: 80vh;
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0 0;
   }
 }
 
@@ -482,7 +482,7 @@ h1 {
 
 @media (min-width: 581px) and (max-width: 768px) {
   #myStory {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 }
 
@@ -855,13 +855,13 @@ footer p {
 
 @media (max-width: 500px) {
   .static-one {
-    height: 825px;
+    height: 775px;
   }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
   .static-one {
-    height: 725px;
+    height: 775px;
   }
 }
 
