@@ -475,7 +475,7 @@ h1 {
 
 @media (max-width: 500px) {
   #myStory {
-    margin-top: 2rem;
+    margin-top: 8rem;
   }
 }
 
@@ -854,7 +854,7 @@ footer p {
 
 @media (max-width: 500px) {
   .static-one {
-    height: 850px;
+    height: 875px;
   }
 }
 
