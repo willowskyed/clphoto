@@ -203,7 +203,10 @@ h1 {
     text-align: center;
     color: white;
     font-size: 2.5rem;
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
+        margin-top: 6rem;
+    }
+    @media (min-width: 501px) and (max-width: 768px) {
         margin: 2rem 0 3rem 0;
         font-size: 2rem;
     }
@@ -269,11 +272,11 @@ h1 {
     margin-left: 5rem;
     margin-right: 0;
     padding: 0;
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
         min-height: 50vh;
         max-height: 60vh;
         min-width: 50vw;
-        margin-bottom: 3rem;
+        margin-top: 3rem;
     }
     @media (min-width: 581px) and (max-width: 768px) {
         justify-content: center;
