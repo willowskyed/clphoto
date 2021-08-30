@@ -417,6 +417,8 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     min-height: 50vh;
     max-height: 60vh;
     min-width: 50vw;
