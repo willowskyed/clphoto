@@ -429,7 +429,7 @@ h1 {
     -ms-flex-line-pack: center;
         align-content: center;
     min-height: 80vh;
-    margin: 3rem 0 0.5rem 0;
+    margin: 4rem 0 0.5rem 0;
   }
 }
 
@@ -470,7 +470,7 @@ h1 {
 
 @media (max-width: 500px) {
   #myStory {
-    margin-top: 12rem;
+    margin-top: 10rem;
   }
 }
 
@@ -495,7 +495,7 @@ h1 {
   #about-text {
     max-height: 40%;
     width: 100vw;
-    margin-top: -2rem;
+    margin: -2rem 0 0 0;
   }
 }
 
