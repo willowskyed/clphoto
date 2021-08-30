@@ -310,7 +310,7 @@ h1 {
 
 @media (max-width: 500px) {
   h1 {
-    margin: 9rem 0 2rem 0;
+    margin: 8rem 0 1rem 0;
     font-size: 2rem;
   }
 }
