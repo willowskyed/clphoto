@@ -417,7 +417,7 @@ h1 {
     min-height: 50vh;
     max-height: 60vh;
     min-width: 50vw;
-    margin-top: 1rem;
+    margin: 1rem 0 2rem 0;
   }
 }
 
@@ -494,8 +494,7 @@ h1 {
 @media (max-width: 768px) {
   #about-text {
     max-height: 40%;
-    width: 100%;
-    margin: 0;
+    width: 100vw;
     margin-top: -2rem;
   }
 }
