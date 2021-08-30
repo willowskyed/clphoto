@@ -499,9 +499,7 @@ h1 {
 @media (max-width: 768px) {
   #about-text {
     max-height: 40%;
-    width: 100vw;
     margin: -2rem 0 0 0;
-    text-align: center;
   }
 }
 
@@ -856,7 +854,7 @@ footer p {
 
 @media (max-width: 500px) {
   .static-one {
-    height: 800px;
+    height: 825px;
   }
 }
 
