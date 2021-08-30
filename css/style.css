@@ -420,9 +420,9 @@ h1 {
     -ms-flex-line-pack: center;
         align-content: center;
     min-height: 50vh;
-    max-height: 60vh;
+    max-height: 70vh;
     min-width: 50vw;
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
   }
 }
 
@@ -501,6 +501,7 @@ h1 {
     max-height: 40%;
     width: 100vw;
     margin: -2rem 0 0 0;
+    text-align: center;
   }
 }
 
