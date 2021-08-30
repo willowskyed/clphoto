@@ -83,9 +83,12 @@ section.scrolled #logo {
     &:hover {
         transform: scale(1.05);
     }
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         left: 4.5rem;
         font-size: 1.4rem;
+    }
+    @media (min-width: 501px) and (max-width: 768px) {
+        text-align: center;
     }
 }
 .menu-wrap {
@@ -201,7 +204,7 @@ h1 {
     color: white;
     font-size: 2.5rem;
     @media (max-width: 768px) {
-        margin: 3rem 0 2rem 0;
+        margin: 2rem 0 3rem 0;
         font-size: 2rem;
     }
 }
@@ -213,7 +216,7 @@ h1 {
         flex-direction: column;
         width: 100vw;
         text-align: center;
-        margin-top: 5rem;
+        margin: 0 0 1rem 0;
     }
 }
 #main-img-container {
@@ -228,10 +231,14 @@ h1 {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         justify-content: center;
         max-height: 75%;
         margin-top: 1rem;
+    }
+    @media (min-width: 501px) and (max-width: 768px) {
+        justify-content: center;
+        max-width: 60vw;
     }
 }
 #main-img {
@@ -268,11 +275,11 @@ h1 {
         min-width: 50vw;
         margin-bottom: 3rem;
     }
-    @media (max-width: 768px) {
+    @media (min-width: 581px) and (max-width: 768px) {
         justify-content: center;
         align-content: center;
-        max-height: 80vh;
-        margin: 2rem 0 0.5rem 0;
+        min-height: 80vh;
+        margin: 3rem 0 0.5rem 0;
     }
     @media (min-width: 992px) {
         min-height: 90vh;
@@ -290,9 +297,8 @@ h1 {
         max-width: 40%;
         max-height: 50%;
     }
-    @media (max-width: 768px) {
-        max-width: 50%;
-        max-height: 70%;
+    @media (min-width: 581px) and (max-width: 768px) {
+        max-height: 100%;
     }
 }
 #myStory {
@@ -300,8 +306,11 @@ h1 {
     font-family: 'Raleway-Light', sans-serif;
     font-weight: 300;
     text-align: center;
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         margin-top: 12rem;
+    }
+    @media (min-width: 581px) and (max-width: 768px) {
+        margin-top: 6rem;
     }
 }
 #about-text {
@@ -483,8 +492,11 @@ h5 {
     display: flex;
     flex-direction: column;
     align-self: center;
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+        margin-top: 1rem;
     }
 }
 h4 {
@@ -571,15 +583,24 @@ footer p {
 /* hero */
 .static-one {
     background-color: #ebbe88;
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         height: 800px;
+    }
+    @media (max-width: 768px) {
+        height: 725px;
     }
 }
 /* about */
 .static-two {
     background-color: #d99771;
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         height: 1080px;
+    }
+    @media (min-width: 501px) and (max-width: 768px) {
+        height: 950px;
+    }
+    @media (min-width: 769px) and (max-width: 900px) {
+        height: 700px;
     }
 }
 /* gallery */

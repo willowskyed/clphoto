@@ -152,10 +152,16 @@ section.scrolled #logo {
           transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #brand {
     left: 4.5rem;
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  #brand {
+    text-align: center;
   }
 }
 
@@ -304,7 +310,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    margin: 3rem 0 2rem 0;
+    margin: 2rem 0 3rem 0;
     font-size: 2rem;
   }
 }
@@ -323,7 +329,7 @@ h1 {
             flex-direction: column;
     width: 100vw;
     text-align: center;
-    margin-top: 5rem;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -342,13 +348,22 @@ h1 {
   transform: translate3d(0, 0, 0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #main-img-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     max-height: 75%;
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  #main-img-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 60vw;
   }
 }
 
@@ -400,15 +415,15 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 581px) and (max-width: 768px) {
   #profile-img-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    max-height: 80vh;
-    margin: 2rem 0 0.5rem 0;
+    min-height: 80vh;
+    margin: 3rem 0 0.5rem 0;
   }
 }
 
@@ -435,10 +450,9 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 581px) and (max-width: 768px) {
   #profile-img {
-    max-width: 50%;
-    max-height: 70%;
+    max-height: 100%;
   }
 }
 
@@ -449,9 +463,15 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #myStory {
     margin-top: 12rem;
+  }
+}
+
+@media (min-width: 581px) and (max-width: 768px) {
+  #myStory {
+    margin-top: 6rem;
   }
 }
 
@@ -696,9 +716,15 @@ h5 {
       align-self: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #contact-text {
     margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-text {
+    margin-top: 1rem;
   }
 }
 
@@ -818,9 +844,15 @@ footer p {
   background-color: #ebbe88;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .static-one {
     height: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .static-one {
+    height: 725px;
   }
 }
 
@@ -829,9 +861,21 @@ footer p {
   background-color: #d99771;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .static-two {
     height: 1080px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .static-two {
+    height: 950px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .static-two {
+    height: 700px;
   }
 }
 
