@@ -70,19 +70,18 @@ section.scrolled #logo {
     left: 7rem;
     width: 500px;
     margin: 1rem 2rem 0.5rem 0;
-    font-family: Cinzel, serif;
+    font-family: 'Cinzel', serif;
     font-weight: normal;
     color: white;
     font-size: 1.8rem;
     text-decoration: none;
     background-color: transparent !important;
     z-index: 10;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    &:hover {
-        transform: scale(1.05);
-    }
+    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 10s; /* Firefox < 16 */
+     -ms-animation: fadein 10s; /* Internet Explorer */
+      -o-animation: fadein 10s; /* Opera < 12.1 */
+        animation: fadein 10s;
     @media (max-width: 500px) {
         left: 4.5rem;
         font-size: 1.4rem;
@@ -91,6 +90,31 @@ section.scrolled #logo {
         text-align: center;
     }
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .menu-wrap {
 	background-color: transparent !important;
 	position: fixed;
@@ -204,7 +228,7 @@ h1 {
     color: white;
     font-size: 2.5rem;
     @media (max-width: 500px) {
-        margin: 8rem 0 1rem 0;
+        margin: 9rem 0 1rem 0;
         font-size: 2rem;
     }
     @media (min-width: 501px) and (max-width: 768px) {

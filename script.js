@@ -8,7 +8,7 @@
             targets: '.ml3 .letter',
             opacity: [0,1],
             easing: "easeInOutQuad",
-            duration: 1500,
+            duration: 2000,
             delay: (el, i) => 100 * (i+1)
             });
     });
