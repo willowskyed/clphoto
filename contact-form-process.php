@@ -7,7 +7,7 @@ if (isset($_POST['Email'])) {
 
     function problem($error)
     {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "We are very sorry, but there were error(s) found within the form you submitted. ";
         echo "These errors appear below.<br><br>";
         echo $error . "<br><br>";
         echo "Please go back and fix these errors.<br><br>";
@@ -43,7 +43,7 @@ if (isset($_POST['Email'])) {
     }
 
     if (strlen($message) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+        $error_message .= 'The Message you entered does not appear to be valid.<br>';
     }
 
     if (strlen($error_message) > 0) {
