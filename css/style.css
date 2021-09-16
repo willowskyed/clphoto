@@ -645,7 +645,7 @@ h5 {
 
 @media (min-width: 1170px) {
   .flip-card {
-    width: 15vw;
+    width: 18vw;
   }
 }
 
@@ -815,10 +815,6 @@ h4 {
 .btn-outline-light:hover {
   background-color: white;
   color: #acbfa4;
-}
-
-#Content {
-  min-height: 5rem;
 }
 
 /* footer */
