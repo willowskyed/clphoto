@@ -445,7 +445,7 @@ h1 {
         align-content: center;
     min-height: 50vh;
     max-height: 70vh;
-    min-width: 50vw;
+    min-width: 70vw;
     margin: 2rem 0 2rem 0;
   }
 }
