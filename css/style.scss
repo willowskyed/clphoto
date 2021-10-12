@@ -227,10 +227,17 @@ h1 {
     text-align: center;
     color: white;
     font-size: 2.5rem;
-    @media (max-width: 500px) {
+    /* smaller phones */
+    @media (max-width : 427px) {
         margin: 9rem 0 1rem 0;
         font-size: 2rem;
     }
+    /* larger phones */
+    @media (min-width: 428px) and (max-width: 500px) {
+        margin: 12rem 0 1rem 0;
+        font-size: 2rem;
+    }
+    /* tablet */
     @media (min-width: 501px) and (max-width: 768px) {
         margin: 2rem 0 3rem 0;
     }
@@ -301,8 +308,8 @@ h1 {
         justify-content: center;
         align-content: center;
         min-height: 50vh;
-        max-height: 70vh;
-        min-width: 70vw;
+        max-height: 60vh;
+        min-width: 90vw;
         margin: 2rem 0 2rem 0;
     }
     @media (min-width: 581px) and (max-width: 768px) {
@@ -325,6 +332,7 @@ h1 {
     border: thin solid white;
     @media (max-width: 500px) {
         max-height: 80%;
+        max-width: 100%;
     }
     @media (min-width: 581px) and (max-width: 768px) {
         max-height: 100%;
@@ -520,10 +528,11 @@ h5 {
     flex-direction: column;
     align-self: center;
     @media (max-width: 500px) {
-        margin-top: 3rem;
+        padding-top: 0;
     }
     @media (max-width: 768px) {
-        margin-top: 1rem;
+        align-self: end;
+        padding-top: 12rem;
     }
 }
 h4 {
@@ -540,6 +549,7 @@ h4 {
     font-size: 2rem;
     color: white;
 }
+/* form styles
 #contact-form {
     width: 50vw;
     @media (max-width: 768px) {
@@ -570,26 +580,32 @@ h4 {
         color: #acbfa4;
     }
 }
+*/
 
 /* footer */
 
-footer {
+#footer {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 100vh;
-}
-footer p {
+    padding-top: 4rem;
+} 
+#footer p {
     font-family: "Raleway-LightItalic", sans-serif;
     font-weight: 300;
     color: white;
     font-size: 0.75rem;
 }
 #logo {
-    min-height: 70vh;
-    margin-bottom: 6rem;
+    min-width: 60vw;
+    padding-right: 5rem;
+    @media (max-width: 768px) {
+        min-width: 10vw;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* parallax scrolling */
@@ -648,14 +664,14 @@ footer p {
 .static-five {
     background-color: #acbfa4;
     @media (max-width: 768px) {
-        height: 750px;
+        height: 850px;
     }
 }
-/* footer */
+/* footer 
 .static-six {
     background: rgb(236,173,88);
     background: linear-gradient(0deg, rgba(236,173,88,1) 0%, rgba(245,228,193,1) 100%);
-}
+} */
 .parallax::after {
     content: "";
     position: absolute;
@@ -671,19 +687,47 @@ footer p {
     transform-style: preserve-3d;
     z-index: -1;
 }
-.parallax-one::after {
-    background-image: url("../images/parallax-1.jpg");
+@media (max-width: 500px) {
+    .parallax-one::after {
+        background-image: url("../images/parallax-1-mobile.jpg");
+    }
+    .parallax-two::after {
+        background-image: url("../images/parallax-2-mobile.jpg");
+    }
+    .parallax-three::after {
+        background-image: url("../images/parallax-3-mobile.jpg");
+    }
+    .parallax-four::after {
+        background-image: url("../images/parallax-4-mobile.jpg");
+    }
 }
-.parallax-two::after {
-    background-image: url("../images/parallax-2.jpg");
+@media (min-width: 501px) and (max-width: 768px) {
+    .parallax-one::after {
+        background-image: url("../images/parallax-1-tablet.jpg");
+    }
+    .parallax-two::after {
+        background-image: url("../images/parallax-2-tablet.jpg");
+    }
+    .parallax-three::after {
+        background-image: url("../images/parallax-3-tablet.jpg");
+    }
+    .parallax-four::after {
+        background-image: url("../images/parallax-4-tablet.jpg");
+    }
 }
-.parallax-three::after {
-    background-image: url("../images/parallax-3.jpg");
+@media (min-width: 769px) {
+    .parallax-one::after {
+        background-image: url("../images/parallax-1.jpg");
+    }
+    .parallax-two::after {
+        background-image: url("../images/parallax-2.jpg");
+    }
+    .parallax-three::after {
+        background-image: url("../images/parallax-3.jpg");
+    }
+    .parallax-four::after {
+        background-image: url("../images/parallax-4.jpg");
+    }
 }
-.parallax-four::after {
-    background-image: url("../images/parallax-4.jpg");
-}
-.parallax-five::after {
-    background-image: url("../images/parallax-5.jpg");
-}
+
 
