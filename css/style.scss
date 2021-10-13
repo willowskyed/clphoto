@@ -527,12 +527,9 @@ h5 {
     display: flex;
     flex-direction: column;
     align-self: center;
-    @media (max-width: 500px) {
-        padding-top: 0;
-    }
+    margin: 0 0 0 2rem;
     @media (max-width: 768px) {
-        align-self: end;
-        padding-top: 12rem;
+        margin: 5rem 0 2rem 0;
     }
 }
 h4 {
@@ -544,12 +541,12 @@ h4 {
     font-family: 'Raleway-Medium', sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    color: white;
 }
 .fa-instagram {
     font-size: 2rem;
     color: white;
-}
-/* form styles
+} /* form styles 
 #contact-form {
     width: 50vw;
     @media (max-width: 768px) {
@@ -579,33 +576,35 @@ h4 {
         background-color: white;
         color: #acbfa4;
     }
-}
-*/
+} */
 
 /* footer */
 
-#footer {
+footer {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    padding-top: 4rem;
-} 
-#footer p {
+    justify-items: end;
+    height: 100vh;
+}
+footer p {
     font-family: "Raleway-LightItalic", sans-serif;
     font-weight: 300;
-    color: white;
+    color: #a0644c;
     font-size: 0.75rem;
 }
 #logo {
-    min-width: 60vw;
-    padding-right: 5rem;
+    min-width: 50vw;
+    max-width: 60vw;
     @media (max-width: 768px) {
-        min-width: 10vw;
-        padding: 0;
-        margin: 0;
+        min-width: 80vw;
     }
+}
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* parallax scrolling */
@@ -648,7 +647,7 @@ h4 {
 }
 /* gallery */
 .static-three {
-    background-color: #f5e0a6;
+    background-color: #acbfa4;
     @media (max-width: 480px) {
         height: 60vh;
     }
@@ -660,18 +659,21 @@ h4 {
         height: 80vh;
     }
 }
-/* contact */
+/* contact 
 .static-five {
     background-color: #acbfa4;
     @media (max-width: 768px) {
-        height: 850px;
+        height: 750px;
+    }
+} */
+/* footer */
+.static-six {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(160,100,76,1) 100%);     
+    @media (max-width: 768px) {
+        height: 750px;
     }
 }
-/* footer 
-.static-six {
-    background: rgb(236,173,88);
-    background: linear-gradient(0deg, rgba(236,173,88,1) 0%, rgba(245,228,193,1) 100%);
-} */
 .parallax::after {
     content: "";
     position: absolute;

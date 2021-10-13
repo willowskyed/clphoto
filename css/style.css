@@ -757,20 +757,12 @@ h5 {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-@media (max-width: 500px) {
-  #contact-text {
-    padding-top: 0;
-  }
+  margin: 0 0 0 2rem;
 }
 
 @media (max-width: 768px) {
   #contact-text {
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
-    padding-top: 12rem;
+    margin: 5rem 0 2rem 0;
   }
 }
 
@@ -784,6 +776,7 @@ h4 {
   font-family: 'Raleway-Medium', sans-serif;
   font-weight: 500;
   font-size: 1rem;
+  color: white;
 }
 
 .fa-instagram {
@@ -791,7 +784,7 @@ h4 {
   color: white;
 }
 
-/* form styles
+/* form styles 
 #contact-form {
     width: 50vw;
     @media (max-width: 768px) {
@@ -821,10 +814,9 @@ h4 {
         background-color: white;
         color: #acbfa4;
     }
-}
-*/
+} */
 /* footer */
-#footer {
+footer {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,30 +828,39 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-top: 4rem;
+  justify-items: end;
+  height: 100vh;
 }
 
-#footer p {
+footer p {
   font-family: "Raleway-LightItalic", sans-serif;
   font-weight: 300;
-  color: white;
+  color: #a0644c;
   font-size: 0.75rem;
 }
 
 #logo {
-  min-width: 60vw;
-  padding-right: 5rem;
+  min-width: 50vw;
+  max-width: 60vw;
 }
 
 @media (max-width: 768px) {
   #logo {
-    min-width: 10vw;
-    padding: 0;
-    margin: 0;
+    min-width: 80vw;
   }
+}
+
+#logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* parallax scrolling */
@@ -927,7 +928,7 @@ h4 {
 
 /* gallery */
 .static-three {
-  background-color: #f5e0a6;
+  background-color: #acbfa4;
 }
 
 @media (max-width: 480px) {
@@ -947,22 +948,26 @@ h4 {
   }
 }
 
-/* contact */
+/* contact 
 .static-five {
-  background-color: #acbfa4;
+    background-color: #acbfa4;
+    @media (max-width: 768px) {
+        height: 750px;
+    }
+} */
+/* footer */
+.static-six {
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#a0644c));
+  background: linear-gradient(0deg, white 0%, #a0644c 100%);
 }
 
 @media (max-width: 768px) {
-  .static-five {
-    height: 850px;
+  .static-six {
+    height: 750px;
   }
 }
 
-/* footer 
-.static-six {
-    background: rgb(236,173,88);
-    background: linear-gradient(0deg, rgba(236,173,88,1) 0%, rgba(245,228,193,1) 100%);
-} */
 .parallax::after {
   content: "";
   position: absolute;
