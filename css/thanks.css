@@ -1,0 +1,18 @@
+@import 'fonts.css';
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(217,151,113,1) 75%);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Raleway-Thin', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 10rem;
+    color: white;
+    font-size: 2rem;
+}
