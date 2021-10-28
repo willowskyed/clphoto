@@ -77,11 +77,6 @@
             loop:true,
             nav:false
             },
-            1100:{
-            items:5,
-            loop:true,
-            nav:false
-            }
         }
         });
     });
