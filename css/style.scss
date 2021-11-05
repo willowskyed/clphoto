@@ -1,5 +1,7 @@
 @import 'fonts.css';
-
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
     height: 100%;
@@ -66,6 +68,8 @@ section.scrolled #logo {
     display: inline-block;
     position: absolute;
     width: 100vw;
+    margin: 1.5rem 0 0 1rem;
+    text-align: center;
     font-family: 'Cinzel', serif;
     font-weight: normal;
     color: white;
@@ -78,25 +82,18 @@ section.scrolled #logo {
      -ms-animation: fadein 10s; /* Internet Explorer */
       -o-animation: fadein 10s; /* Opera < 12.1 */
         animation: fadein 10s;
-    @media (max-width: 375px) { /* mobile */
-        margin: 1.5rem 0 0 1rem;
+    @media (max-width: 320px) { /* mobile */
         font-size: 1rem;
-        text-align: center;
     }
-    @media (min-width: 376px) and (max-width: 599px) { 
-        text-align: center;
-        margin: 1.25rem 0 0 0;
-        font-size: 1.4rem;
+    @media (min-width: 321px) and (max-width: 600px) {
+        font-size: 1.2rem;
     }
-    @media (min-width: 600px) and (max-width: 768px) { /* tablet */
-        text-align: center;
+    @media (min-width: 768px) { /* tablet */
         margin: 1rem 0 0 0;
     }
-    @media (min-width: 769px) { /* laptop & up */
-        margin: 1rem 0 0 0;
-        top: 0;
-        right: auto;
-        left: 7rem;
+    @media (min-width: 992px) {
+        text-align: left;
+        margin: 1rem 0 0 6rem;
     }
     @media (min-width: 1300px) {
         font-size: 2.1rem;
@@ -128,7 +125,7 @@ section.scrolled #logo {
 }
 
 .menu-wrap {
-	background-color: transparent !important;
+	background-color: transparent;
 	position: fixed;
 	top: 0;
 	height: 100%;
@@ -151,6 +148,9 @@ section.scrolled #logo {
 .menu-sidebar li {
 	padding-top: 10px;
     list-style-type: none;
+    @media (max-width: 600px) {
+        backdrop-filter: blur(2px);
+    }
 }
 .menu-sidebar li > a {
 	color: #f3f3f3;
@@ -238,38 +238,35 @@ section.scrolled #logo {
 
 .static-one {
     background-color: #ebbe88;
-    @media (max-width: 375px) {
-        height: 100vh;
-    }
-    @media (min-width: 576px) and (max-width: 500px) {
-        height: 700px;
-    }
-    @media (min-width: 501px) and (max-width: 767px) {
-        height: 775px;
-    }
-    @media (min-width: 768px) and (max-width: 992px) {
-        height: 100vh;
-    }
+    height: 100vh;
 }
 #hero {
-    height: 100vh;
     width: 100vw;
-    margin: 10rem 0 2rem 0;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         flex-direction: column;
-        margin: 0 0 4rem 0;
+        margin: 0;
     }
 }
 #h1-container {
-    width: 50vw;
-    @media (min-width: 320px) and (max-width: 600px) {
-        width: 90vw;
+    width: 90vw;
+    height: 6rem;
+    margin: 2rem 0 2rem 0;
+    @media (max-width: 320px) {
+        margin: 2rem 0 0 0;
     }
-    @media (min-width: 601) and (max-width: 768px) {
+    @media (min-width: 601) and (max-width: 767px) {
         width: 70vw;
     }
-    @media (min-width: 769px) and (max-width: 992px) {
-        width: 40vw;
+    @media (min-width: 768px) {
+        margin: 0 0 4rem 0;
+    }
+    @media (min-width: 992px) {
+        width: 50vw;
+        margin: 3rem 0 0 0;
+    }
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
+        width: 70%;
+        margin: 2rem auto;
     }
 }
 h1 {
@@ -277,31 +274,25 @@ h1 {
     font-weight: 100;
     text-align: center;
     color: white;
-    font-size: 2.5rem;
-    margin: 1rem;
-    /* smaller phones */
-    @media (max-width: 375px) {
-        margin: 7rem 0 2rem 0;
-        font-size: 1.5rem;
-    }
-    /* larger phones */
-    @media (min-width: 428px) and (max-width: 599px) {
-        margin: 12rem 0 1rem 0;
-        font-size: 2rem;
-    }
+    font-size: 1.5rem;
     /* tablet */
-    @media (min-width: 600px) and (max-width: 768px) {
-        margin: 8rem 0 4rem 0;
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
     }
     @media (min-width: 1300px) {
+        font-size: 3.4rem;
+    }
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
         font-size: 3.4rem;
     }
 }
 #main-img-container {
     display: inline-flex;
     overflow: hidden;
-    width: 40vw;
-    height: 85vh;
+    min-width: 70vw;
+    max-width: 80vw;
+    min-height: 60vh;
+    max-height: 70vh;
     padding: 0;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -309,24 +300,24 @@ h1 {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    /* mobile */
-    @media (max-width: 375px) {
-        max-height: 60vh;
-        width: 80vw;
-    }
-    @media (min-width: 376px) and (max-width: 600px) {
-        width: 80vw;
-        max-height: 55vh;
-        margin: 2rem 0 1rem 0;
-    } /* tablet */
-    @media (min-width: 601px) and (max-width: 768px) {
-        width: 80vw;
+    @media (min-width: 768px) and (max-width: 991px) { /* tablet */
+        min-height: 60vh;
         max-height: 70vh;
-        margin: 0 0 3rem 0;
-    } /* laptop/desktop */
-    @media (min-width: 769px) and (max-width: 991px) {
+        min-width: 60vw;
+        max-width: 70vw;
+    }
+    @media (min-width: 992px) { /* desktop */
+        min-height: 80vh;
+        max-height: 90vh;
+        min-width: 40vw; 
+        max-width: 50vw;
+    }
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
+        min-height: 70vh;
         max-height: 80vh;
-        width: 40vw;
+        min-width: 60vw;
+        max-width: 70vw;
+        margin: 4rem 0 0 0;
     }
 }
 #main-img {
@@ -342,21 +333,13 @@ h1 {
 
 .static-two {
     background-color: #d99771;
-    @media (max-width: 375px) {
-        height: 1150px !important;
-    }
-    @media (min-width: 376px) and (max-width: 500px) {
-        height: 1100px;
-    }
-    @media (min-width: 501px) and (max-width: 767px) {
-        height: 950px;
-    }
-    @media (min-width: 768px) and (max-width: 900px) {
+    height: 75rem;
+    @media (min-width: 768px) {
         height: 100vh;
     }
 }
 #about {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     @media (max-width: 768px) {
         flex-direction: column;
@@ -371,28 +354,26 @@ h1 {
     max-height: 90vh;
     padding: 0;
     /* mobile */
-    @media (max-width: 375px) {
+    @media (max-width: 374px) {
         margin: 2rem 0 2.5rem 0;
         min-width: 70vw;
         max-width: 90vw;
         min-height: 50vh;
         max-height: 60vh;
     }
-    @media (min-width: 376px) and (max-width: 600px) {
+    @media (min-width: 375px) and (max-width: 767px) {
         min-height: 40vh;
         max-height: 55vh;
         min-width: 50vw;
         max-width: 80vw;
-        margin: -9rem 0 3.5rem 0;
+        margin: 4rem 0 6rem 0;
     } /* tablet */
-    @media (min-width: 601px) and (max-width: 768px) {
-        height: 60vh;
-        width: 70vw;
-        margin: 3rem 0 0 0;
-    } /* laptop */
-    @media (min-width: 769px) and (max-width: 991px) {
-        max-height: 80vh;
-        margin: 3rem 0 0 2rem;
+    @media (min-width: 768px) and (max-width: 991px) {
+        min-height: 40vh;
+        max-height: 50vh;
+        min-width: 40vw;
+        max-width: 50vw;
+        margin: 3rem 0 5rem 0;
     } /* desktop */
     @media (min-width: 992px) {
         min-height: 80vh;
@@ -400,28 +381,31 @@ h1 {
     @media (min-width: 1400px) {
         max-height: 70vh;
     }
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
+        min-height: 45vh;
+        max-height: 50vh;
+        min-width: 60vw;
+        max-width: 70vw;
+        margin: 2rem 0 1rem 0;
+    }
 }
 #profile-img {
     background-image: url("../images/profile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 70%;
-    max-width: 100%;
     border-radius: 50%;
     border: thin solid white;
-    @media (max-width: 375px) {
-        max-height: 40%;
-        width: 70%;
-    }
-    @media (min-width: 376px) and (max-width: 600px) {
+    max-height: 40%;
+    width: 70%;
+    @media (min-width: 375px) and (max-width: 767px) {
         max-height: 80%;
         max-width: 100%;
     }
-    @media (min-width: 601px) and (max-width: 768px) {
-        max-height: 60%;
-        width: 90%;
+    @media (min-width: 768px) and (max-width: 991px) {
+        max-height: 40%;
+        max-width: 100%;
     }
-    @media (min-width: 769px) and (max-width: 991px) {
+    @media (min-width: 992px) {
         max-height: 100%;
     }
 }
@@ -431,29 +415,22 @@ h1 {
     font-weight: 300;
     font-size: .8rem;
     text-align: center;
-    max-width: 60vw;
-    margin: 1rem 3rem 0 -3rem;
-    @media (max-width: 600px) {
-        height: 40vh;
-        max-width: 80vw;
-        margin: 0 0 1rem 0;
+    max-height: 40vh;
+    max-width: 80vw;
+    @media (min-width: 768px) and (max-width: 991px) {
+        max-width: 60vw;
     }
-    @media (min-width: 601px) and (max-width: 768px) {
-        height: 40vh;
-        max-width: 80vw;
-        margin: -15rem 0 2rem 0;
-    }
-    @media (min-width: 769px) and (max-width: 991px) {
-        max-width: 40vw;
-    }
-    @media (min-width: 992px) and (max-width: 1024px) {
+    @media (min-width: 992px) {
         max-width: 50vw;
+        max-height: 90vh;
     }
     @media (min-width: 1300px) {
         font-size: 1rem;
     }
-    @media (min-width: 1400px) {
-        margin: 0 8rem 0 -4rem;
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
+        min-width: 60vw;
+        max-width: 70vw;
+        font-size: 1rem;
     }
 }
 #myStory {
@@ -466,15 +443,20 @@ h1 {
 
 .static-three {
     background-color: #ebbe88;
-    @media (max-width: 500px) {
-        height: 25rem !important;
-    }
-    @media (max-width: 991px) {
+    height: 30rem;
+    @media (min-width: 600px) and (max-width: 768px) {
         height: 60vh;
     }
-    @media (max-width: 1024px) {
-        height: 80vh;
+    @media (min-width: 769px) {
+        height: 100vh;
     }
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
+        height: 60vh;
+    }
+}
+#gallery {
+    height: 100%;
+    width: 100%;
 }
 h2 {
     font-family: 'Raleway-ExtraLight', sans-serif;
@@ -482,24 +464,22 @@ h2 {
     text-align: center;
     color: white;
     font-size: 1.2rem;
-    margin: 0 0 3rem 0;
-    padding: 1rem 0 0.8rem 0;
-    @media (max-width: 375px) {
-        margin: 10rem 0.5rem 2rem 0.5rem;
-    }
-    @media (min-width: 376px) and (max-width: 600px) {
-        margin: 12rem 0 2rem 0;
-    }
-    @media (min-width: 601px) and (max-width: 768px) {
-        margin: 15rem 0 3rem 0;
+    margin: 2.5rem auto;
+    width: 60vw;
+    @media (min-width: 768px) {
+        margin: 3.5rem auto;
     }
     @media (min-width: 1300px) {
         font-size: 2.3rem;
         margin: 0 0 4rem 0;
     }
+    @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
+        font-size: 2.3rem;
+        margin: 6rem auto;
+    }
 }
 .item {
-    height: 60vh;
+    height: auto;
     width: 100%;
     padding: 0.5rem;
     &:hover {
@@ -511,12 +491,15 @@ h2 {
 
 .static-four {
     background-color: #cf9c5b;
-    height: 100vh;
-    @media (max-width: 375px) {
-        height: 32rem !important;
+    height: 36rem;
+    @media (min-width: 768px) {
+        height: 50rem;
     }
-    @media (min-width: 768px) and (max-width: 1024px) {
-        height: 80vh;
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
+    @media (min-width: 1024px) and (min-height: 1366px) {
+        height: 52rem;
     }
 }
 #packages {
@@ -542,26 +525,6 @@ h3 {
 }
 h5 {
     font-size: 1.4rem;
-    @media (max-width: 375px) {
-        font-size: 1.2rem;
-    }
-    @media (min-width: 376px) and (max-width: 600px) {
-        margin: 0;
-    }
-    @media (min-width: 601px) and (max-width: 768px) {
-        margin: 1rem 0 0 0;
-    }
-    @media (min-width: 1300px) {
-        font-size: 1.8rem;
-    }
-    @media (min-width: 1400px) {
-        font-size: 1.8rem;
-        margin-top: 1rem;
-    }
-    @media (min-width: 1600px) {
-        font-size: 1.8rem;
-        margin: 0;
-    }
 }
 .disclaimer {
     font-family: "Raleway-LightItalic", sans-serif;
@@ -573,12 +536,6 @@ h5 {
 }
 .card-text {
     font-size: 1.1rem;
-    @media (max-width: 375px) {
-        font-size: 0.9rem;
-    }
-    @media (min-width: 1300px) {
-        font-size: 1.5rem;
-    }
 }
 .flip-card-back > .card-body {
     margin-top: 1rem;
@@ -600,34 +557,23 @@ h5 {
 .flip-card {
     display: inline-block;
     background-color: transparent;
-    height: 80vh;
+    height: 26em;
+    width: 11em;
     margin: 3rem 0 0 0.5rem;
     perspective: 1000px;
-    @media (max-width: 375px) {
-        width: 55vw !important;
-        height: 25rem !important;
+    @media (min-width: 768px) {
+        height: 36em;
+        width: 17em;
     }
-    @media (min-width: 376px) and (max-width: 600px) {
-        width: 60vw;
-        height: 65vh;
-    } 
-    @media (min-width: 601px) and (max-width: 768px) {
-        width: 35vw;
-        height: 60vh;
-        margin: 4rem 0 1rem 0.5rem;
+    @media (min-width: 992px) {
+        height: 30em;
+        width: 13em;
     }
-    @media (max-width: 1024px) {
-        width: 25vw;
-        height: 60vh;
+    @media (min-width: 1024px) and (min-height: 1366px) {
+        height: 37em;
+        width: 16em;
     }
-    @media (min-width: 1120px) {
-        width: 18vw;
-    }
-    @media (min-width: 1400px) {
-        width: 22vw;
-        margin: 5rem 0 0 0.5rem;
-    }
-}
+} 
 .flip-card-inner {
     background-color: transparent;
     font-family: 'Raleway-ExtraLight', sans-serif;
@@ -697,11 +643,15 @@ h5 {
 
 .static-five {
     background-color: #ebbe88;
-    @media (max-width: 375px) {
-        height: 32rem !important;
+    height: 40rem;
+    @media (min-width: 768px) {
+        height: 50rem;
     }
-    @media (min-width: 601px) and (max-width: 1024px) {
-        height: 90vh;
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
+    @media (min-width: 1024px) and (min-height: 1366px) {
+        height: 52rem;
     }
 }
 #testimonials {
@@ -715,7 +665,7 @@ h5 {
     display: inline-block;
     background-color: transparent;
     height: auto;
-    padding: 1rem;
+    width: 17em;
     margin: 4rem 1rem 2rem 1rem;
     color: white;
     white-space: normal;
@@ -724,68 +674,38 @@ h5 {
     font-size: 1rem;
     border: 1px solid white;
     border-radius: 10px;
-    @media (max-width: 375px) {
-        width: 75vw;
-        font-size: 0.8rem;
-        padding: 0;
-        margin: 4rem 0.5rem 2rem 0.5rem;
+    @media (min-width: 768px) {
+        padding: 1rem;
     }
-    @media (min-width: 376px) and (max-width: 500px) {
-        width: 70vw;
+    @media (min-width: 992px) {
+        width: 20em;
     }
-    @media (min-width: 501px) and (max-width: 600px) {
-        width: 50vw;
-    }
-    @media (min-width: 601px) and (max-width: 768px) {
-        width: 32vw;
-        margin: 5rem 1rem 3rem 1rem;
-    }
-    @media (min-width: 769px) and (max-width: 991px) {
-        width: 40vw;
-    }
-    @media (min-width: 992px) and (max-width: 1024px) {
-        width: 30vw;
-    }
-    @media (min-width: 1240px) and (max-width: 1399px) {
-        width: 25vw;
-        font-size: 1.2rem;
-    }
-    @media (min-width: 1400px) {
-        width: 22vw;
-        font-size: 1.2rem;
-        margin: 6rem 1rem 2rem 1rem;
-    }
-    @media (min-width: 1600px) {
-        width: 20vw;
-        font-size: 1.2rem;
-        margin: 6rem 1rem 4rem 1rem;
-    }
-    @media (min-width: 1900px) {
-        width: 15vw;
-        font-size: 1.2rem;
-        margin: 6rem 1rem 4rem 1rem;
+    @media (min-width: 1024px) and (min-height: 1366px) {
+        width: 17em;
     }
 }
 
 /* contact section */
 
 .static-six {
-    height: 100vh;
+    height: 60rem;
     background-color: #acbfa4;
-    @media (max-width: 375px) {
-        height: 55rem !important;
-        flex-direction: column;
+    @media (min-width: 768px) {
+        height: 64rem;
     }
-    @media (max-width: 600px) {
-        height: 125vh;
-        flex-direction: column;
+    @media (min-width: 992px) {
+        height: 100vh;
     }
-    @media (min-width: 601px) and (max-width: 768px) {
-        height: 115vh;
+    @media (min-width: 1024px) and (min-height: 1366px) {
+        height: 44rem;
+        padding-top: 4rem;
+    }
+}
+#contact {
+    height: 100%;
+    width: 100%;
+    @media (max-width: 768px) {
         flex-direction: column;
-    } 
-    @media (max-width: 1024px) {
-        height: 80vh;
     }
 }
 #contact-text {
@@ -827,18 +747,15 @@ h4 {
 #logo-container {
     display: flex;
     justify-content: center;
-    margin: 6rem 0 0 0;
-    @media (max-width: 375px) {
-        margin: 2rem 0 0 0;
-    }
-    @media (min-width: 376px) and (max-width: 768px) {
-        margin: 4rem 0 0 0;
-        max-height: 60vh;
+    margin: 3rem auto;
+    height: 20rem;
+    @media (min-width: 768px) {
+        height: 23rem;
     }
 }
 #logo {
     width: auto;
-    height: 70%;
+    height: 100%;
 }
 #contact-form {
     width: 40vw;
@@ -887,10 +804,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
     background-color: #acbfa4;
-    padding: 2rem;
-    @media (max-width: 500px) {
-        padding: 0;
-    }
+    padding: 1rem;
 } 
 #footer p {
     font-family: "Raleway-LightItalic", sans-serif;
@@ -916,6 +830,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.parallax {
     height: 100vh;
 }
 .parallax::after {
