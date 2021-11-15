@@ -93,7 +93,7 @@ h1 {
     }
     @media (min-width: 992px) {
         text-align: left;
-        margin: 1rem 0 0 6rem;
+        margin: 1.3rem 0 0 6rem;
     }
 }
 @keyframes fadein {
@@ -236,7 +236,7 @@ h1 {
 }
 #hero {
     width: 100vw;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         flex-direction: column;
         margin: 0;
     }
