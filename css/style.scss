@@ -865,52 +865,52 @@ footer {
 }
 @media (max-width: 599px) {
     .parallax-one::after {
-        background-image: url("../images/parallax-1-mobile.jpg");
+        background-image: url("../images/parallax-1-mobile.webp");
     }
     .parallax-two::after {
-        background-image: url("../images/parallax-2-mobile.jpg");
+        background-image: url("../images/parallax-2-mobile.webp");
     }
     .parallax-three::after {
-        background-image: url("../images/parallax-3-mobile.jpg");
+        background-image: url("../images/parallax-3-mobile.webp");
     }
     .parallax-four::after {
-        background-image: url("../images/parallax-4-mobile.jpg");
+        background-image: url("../images/parallax-4-mobile.webp");
     }
     .parallax-five::after {
-        background-image: url("../images/parallax-5-mobile.jpg");
+        background-image: url("../images/parallax-5-mobile.webp");
     }
 }
 @media (min-width: 600px) and (max-width: 768px) {
     .parallax-one::after {
-        background-image: url("../images/parallax-1-tablet.jpg");
+        background-image: url("../images/parallax-1-tablet.webp");
     }
     .parallax-two::after {
-        background-image: url("../images/parallax-2-tablet.jpg");
+        background-image: url("../images/parallax-2-tablet.webp");
     }
     .parallax-three::after {
-        background-image: url("../images/parallax-3-tablet.jpg");
+        background-image: url("../images/parallax-3-tablet.webp");
     }
     .parallax-four::after {
-        background-image: url("../images/parallax-4-tablet.jpg");
+        background-image: url("../images/parallax-4-tablet.webp");
     }
     .parallax-five::after {
-        background-image: url("../images/parallax-5-tablet.jpg");
+        background-image: url("../images/parallax-5-tablet.webp");
     }
 }
 @media (min-width: 769px) {
     .parallax-one::after {
-        background-image: url("../images/parallax-1.jpg");
+        background-image: url("../images/parallax-1.webp");
     }
     .parallax-two::after {
-        background-image: url("../images/parallax-2.jpg");
+        background-image: url("../images/parallax-2.webp");
     }
     .parallax-three::after {
-        background-image: url("../images/parallax-3.jpg");
+        background-image: url("../images/parallax-3.webp");
     }
     .parallax-four::after {
-        background-image: url("../images/parallax-4.jpg");
+        background-image: url("../images/parallax-4.webp");
     }
     .parallax-five::after {
-        background-image: url("../images/parallax-5.jpg");
+        background-image: url("../images/parallax-5.webp");
     }
 }
