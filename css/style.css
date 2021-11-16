@@ -484,7 +484,7 @@ h1 {
 }
 
 #main-img {
-  background-image: url("../images/first-img.jpg");
+  background-image: url("../images/first-img.webp");
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100%;
