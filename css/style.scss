@@ -37,6 +37,7 @@ section.scrolled #logo {
     transform: scale(1.1);
     transition: transform 2500ms;
 }
+
 /* zoom effects */
 @keyframes slowZoom {
     0% {
@@ -250,7 +251,7 @@ h1 {
         width: 90%;
         margin: 2rem auto;
     }
-    @media (min-width: 600) and (max-width: 768px) { /* tablet */ 
+    @media (min-width: 600) and (max-width: 768px) { /* tablet */
         margin: 2rem auto;
         width: 70%;
     }
@@ -307,7 +308,7 @@ h1 {
     @media (min-width: 992px) { /* desktop */
         min-height: 80vh;
         max-height: 90vh;
-        min-width: 40vw; 
+        min-width: 40vw;
         max-width: 50vw;
     }
     @media (min-width: 1024px) and (min-height: 1366px) { /* ipad pro */
@@ -493,7 +494,7 @@ h1 {
     }
 }
 
-/* packages section */ 
+/* packages section */
 
 .static-four {
     background-color: #cf9c5b;
@@ -583,7 +584,7 @@ h3 {
     @media (min-width: 1400px) {
         margin: 6rem 0 2rem 1rem;
     }
-} 
+}
 .flip-card-inner {
     background-color: transparent;
     font-family: 'Raleway-ExtraLight', sans-serif;
@@ -646,6 +647,9 @@ h3 {
         background-color: transparent;
         border-radius: 20px;
         border: 1px solid white;
+    }
+    *::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, .5);
     }
 }
 
@@ -824,7 +828,7 @@ footer {
     justify-content: flex-end;
     background-color: #acbfa4;
     padding: 1rem;
-} 
+}
 #footer p {
     font-family: "Raleway-LightItalic", sans-serif;
     font-weight: 300;

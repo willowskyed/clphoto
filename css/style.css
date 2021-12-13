@@ -964,6 +964,10 @@ h3 {
   border: 1px solid white;
 }
 
+.static-four *::-webkit-scrollbar-thumb:hover, .static-five *::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* testimonials section */
 .static-five {
   background-color: #ebbe88;
