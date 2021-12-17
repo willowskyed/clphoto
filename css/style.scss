@@ -16,6 +16,11 @@ html {
     }
 }
 
+// variables
+
+$font-headings: 'Maharlika', serif;
+$font-main: 'Raleway', sans-serif;
+
 /* scroll effects */
 section.scrolled #about-text {
     transform: scale(1.1);
@@ -70,7 +75,7 @@ h1 {
     position: absolute;
     width: 100vw;
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: $font-headings;
     font-weight: normal;
     color: white;
     font-size: 1.8rem;
@@ -129,7 +134,7 @@ h1 {
 	height: 100%;
 	width: auto;
 	margin-left: -280px;
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
 	font-size: 1em;
 	transition: .25s;
@@ -232,7 +237,7 @@ h1 {
 /* main section */
 
 .static-one {
-    background-color: #ebbe88;
+    background-color: #c5a77e;
     height: 100vh;
 }
 #hero {
@@ -269,7 +274,7 @@ h1 {
     }
 }
 #hero h2 {
-    font-family: 'Raleway-Thin', sans-serif;
+    font-family: $font-main;
     font-weight: 100;
     text-align: center;
     color: white;
@@ -331,7 +336,7 @@ h1 {
 /* about section */
 
 .static-two {
-    background-color: #d99771;
+    background-color: #91765d;
     height: 65rem;
     @media (min-width: 768px) {
         height: 100vh;
@@ -417,7 +422,7 @@ h1 {
 }
 #about-text {
     color: white;
-    font-family: 'Raleway-Light', sans-serif;
+    font-family: $font-main;
     font-weight: 300;
     font-size: 0.8rem;
     text-align: center;
@@ -447,7 +452,7 @@ h1 {
 /* gallery section */
 
 .static-three {
-    background-color: #ebbe88;
+    background-color: #745239;
     height: 25rem;
     @media (min-width: 375px) and (max-width: 599px) {
         height: 30rem;
@@ -467,7 +472,7 @@ h1 {
     width: 100%;
 }
 #gallery h2 {
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
     text-align: center;
     color: white;
@@ -497,7 +502,7 @@ h1 {
 /* packages section */
 
 .static-four {
-    background-color: #cf9c5b;
+    background-color: #c5a77e;
     height: 36rem;
     @media (min-width: 768px) {
         height: 50rem;
@@ -515,7 +520,7 @@ h1 {
     white-space: nowrap;
 }
 #packages h2 {
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
     color: white;
     font-size: 1.8rem;
@@ -532,7 +537,7 @@ h3 {
     margin: 0.5rem auto;
 }
 .disclaimer {
-    font-family: "Raleway-LightItalic", sans-serif;
+    font-family: "GlacialIndifference", sans-serif;
     font-weight: 300;
     font-size: 0.8rem;
 }
@@ -587,7 +592,7 @@ h3 {
 }
 .flip-card-inner {
     background-color: transparent;
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
     text-align: center;
     width: 100%;
@@ -624,7 +629,7 @@ h3 {
 .flip-card-back {
     background-color: transparent;
     color: white;
-    background-color: #cf9c5b;
+    background-color: #c5a77e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transform: rotateY(180deg);
@@ -656,7 +661,7 @@ h3 {
 /* testimonials section */
 
 .static-five {
-    background-color: #ebbe88;
+    background-color: #91765d;
     height: 40rem;
     @media (min-width: 768px) {
         height: 50rem;
@@ -675,7 +680,7 @@ h3 {
     align-items: start;
 }
 #testimonials h2 {
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
     color: white;
     font-size: 1.8rem;
@@ -695,7 +700,7 @@ h3 {
     margin: 4rem 1rem 2rem 1rem;
     color: white;
     white-space: normal;
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
     font-size: 1rem;
     border: 1px solid white;
@@ -724,7 +729,7 @@ h3 {
 
 .static-six {
     height: 60rem;
-    background-color: #acbfa4;
+    background-color: #9bad99;
     @media (min-width: 768px) {
         height: 64rem;
     }
@@ -747,7 +752,7 @@ h3 {
     align-self: center;
 }
 #contact h2 {
-    font-family: 'Raleway-ExtraLight', sans-serif;
+    font-family: $font-main;
     font-weight: 200;
     font-size: 1.8rem;
     color: white;
@@ -793,9 +798,9 @@ h3 {
     }
 }
 .form-control {
-    font-family: "Raleway-LightItalic", sans-serif;
+    font-family: "GlacialIndifference", sans-serif;
     font-weight: 300;
-    background-color: #acbfa4;
+    background-color: #9bad99;
     color: white;
     border-color: white;
     border-radius: 10px;
@@ -805,7 +810,7 @@ h3 {
     }
 }
 .form-label {
-    font-family: 'Raleway-Regular', sans-serif;
+    font-family: $font-main;
     font-weight: 400;
     font-size: 1rem;
     color: white;
@@ -814,7 +819,7 @@ h3 {
     border-radius: 10px;
     &:hover {
         background-color: white;
-        color: #acbfa4;
+        color: #9bad99;
     }
 }
 
@@ -826,11 +831,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background-color: #acbfa4;
+    background-color: #9bad99;
     padding: 1rem;
 }
 #footer p {
-    font-family: "Raleway-LightItalic", sans-serif;
+    font-family: "GlacialIndifference", sans-serif;
     font-weight: 300;
     color: white;
     font-size: 0.75rem;
@@ -863,12 +868,10 @@ footer {
     left: 0;
     background-size: cover;
     background-position: center;
-    transform: translateZ(-1px) scale(1.7);
-    -webkit-transform: translateZ(-1px) scale(1.7);
-    -moz-transform: translateZ(-1px) scale(1.7);
-    transform-style: preserve-3d;
+    background-attachment: fixed;
     z-index: -1;
 }
+
 @media (max-width: 599px) {
     .parallax-one::after {
         background-image: url("../images/parallax-1-mobile.jpg");

@@ -1,11 +1,10 @@
-/* cinzel-regular - latin */
+/* Maharlika - latin */
 @font-face {
-    font-family: 'Cinzel', serif;
+    font-family: 'Maharlika', serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     src: local('Cinzel'),
-         url('../fonts/cinzel-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/cinzel-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/Maharlika.ttf') format('ttf');
 }
 /* raleway-100 - latin */
 @font-face {
