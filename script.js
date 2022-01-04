@@ -23,34 +23,46 @@
         });
     });
 
-    // intersection observer for scroll effects
-    const sections = [...document.querySelectorAll("section")];
+    // intersection observer
 
-    let options = {
-        rootMargin: "0px",
-        threshold: 0.40
-    };
+const zooms = document.querySelectorAll(".zoom-in");
+const zooms2 = document.querySelectorAll(".zoom-in-2");
+const zooms3 = document.querySelectorAll(".zoom-in-3");
+const zooms4 = document.querySelectorAll(".zoom-in-4");
 
-    const callback = (entries, observer) => {
-        entries.forEach(entry => {
-            const { target } = entry;
-            console.log(entry, target)
-    
-            if (entry.intersectionRatio >= 0.40) {
-                target.classList.add("scrolled");
-            } else {
-                target.classList.remove("scrolled");
-            }
-        });
-    };
+const options = {
+    threshold: 0.7,
+    rootMargin: "0px"
+};
 
-    const observer = new IntersectionObserver(callback, options);
-
-    sections.forEach((section, index) => {
-        observer.observe(section);
+const zoomOnScroll = new IntersectionObserver(function(
+    entries,
+    zoomOnScroll
+) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            entry.target.classList.remove("scrolled");
+        } else {
+            entry.target.classList.add("scrolled");
+        }
     });
+},
+options);
 
-    // owl carousel
+zooms.forEach(zoom => {
+    zoomOnScroll.observe(zoom);
+});
+zooms2.forEach(zoom => {
+    zoomOnScroll.observe(zoom);
+});
+zooms3.forEach(zoom => {
+    zoomOnScroll.observe(zoom);
+});
+zooms4.forEach(zoom => {
+    zoomOnScroll.observe(zoom);
+});
+
+    // carousel
     $(document).ready(function() {
         $("#owl-demo").owlCarousel({
             lazyLoad: true,
@@ -67,16 +79,21 @@
             loop:true,
             nav:false
             },
-            768:{
+            769:{
             items:3,
             loop:true,
             nav:false
             },
             992:{
-            items:4,
-            loop:true,
-            nav:false
-            },
+                items:4,
+                loop:true,
+                nav:false
+                },
+            1100:{
+                items:5,
+                loop:true,
+                nav:false
+                },
         }
         });
     });
