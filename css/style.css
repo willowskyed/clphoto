@@ -21,6 +21,17 @@ html {
 
 /* --- variables --- */
 /* --- scroll zoom effects --- */
+@media (min-width: 768px) {
+  .zoom-in-img.scrolled {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+    -webkit-transition: -webkit-transform 4000ms;
+    transition: -webkit-transform 4000ms;
+    transition: transform 4000ms;
+    transition: transform 4000ms, -webkit-transform 4000ms;
+  }
+}
+
 .zoom-in.scrolled {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
@@ -827,8 +838,8 @@ h3 {
 .flip-card {
   display: inline-block;
   background-color: transparent;
-  height: 25em;
-  width: 11em;
+  height: 28em;
+  width: 12em;
   margin: 4rem 0 0 0.5rem;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -970,7 +981,7 @@ h3 {
   border-bottom: 1px solid;
   border-top-color: rgba(255, 255, 255, 0.5);
   border-bottom-color: rgba(255, 255, 255, 0.5);
-  height: 40rem;
+  height: 37rem;
 }
 
 @media (min-width: 768px) {
@@ -1153,16 +1164,6 @@ h3 {
   }
 }
 
-#contact h2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 100%;
-  width: 50%;
-  left: 25%;
-  border-top: 1px solid white;
-}
-
 .fa-instagram, .fa-facebook-square {
   font-size: 2rem;
   color: white;
@@ -1338,7 +1339,19 @@ footer {
 }
 
 .parallax {
-  height: 80vh;
+  height: 40vh;
+}
+
+@media (min-width: 600px) {
+  .parallax {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 769px) {
+  .parallax {
+    height: 80vh;
+  }
 }
 
 .parallax::after {
@@ -1352,6 +1365,12 @@ footer {
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .parallax::after {
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 599px) {

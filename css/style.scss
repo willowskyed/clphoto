@@ -34,6 +34,12 @@ $border-color-light: rgba(255, 255, 255, 0.5);
 
 /* --- scroll zoom effects --- */
 
+@media (min-width: 768px) {
+    .zoom-in-img.scrolled {
+        transform: scale(1.07);
+        transition: transform 4000ms;
+    }
+}
 .zoom-in.scrolled {
     transform: scale(1.07);
     transition: transform 4000ms;
@@ -585,8 +591,8 @@ h3 {
 .flip-card {
     display: inline-block;
     background-color: transparent;
-    height: 25em;
-    width: 11em;
+    height: 28em;
+    width: 12em;
     margin: 4rem 0 0 0.5rem;
     perspective: 1000px;
     @media (min-width: 500px) and (max-width: 599px) {
@@ -694,7 +700,7 @@ h3 {
     border-bottom: 1px solid;
     border-top-color: $border-color-light;
     border-bottom-color: $border-color-light;
-    height: 40rem;
+    height: 37rem;
     @media (min-width: 768px) {
         height: 45rem;
     }
@@ -812,15 +818,6 @@ h3 {
     @media (min-width: 992px) {
         margin: 0 0 1rem 0;
     }
-}
-#contact h2::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 100%;
-    width: 50%;
-    left: 25%;
-    border-top: 1px solid white;
 }
 .fa-instagram, .fa-facebook-square {
     font-size: 2rem;
@@ -946,7 +943,13 @@ footer {
     justify-content: center;
 }
 .parallax {
-    height: 80vh;
+    height: 40vh;
+    @media (min-width: 600px) {
+        height: 60vh;
+    }
+    @media (min-width: 769px) {
+        height: 80vh;
+    }
 }
 .parallax::after {
     content: "";
@@ -959,6 +962,9 @@ footer {
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
+    @media (max-width: 768px) {
+        background-attachment: scroll;
+    }
 }
 
 @media (max-width: 599px) {

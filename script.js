@@ -29,6 +29,7 @@ const zooms = document.querySelectorAll(".zoom-in");
 const zooms2 = document.querySelectorAll(".zoom-in-2");
 const zooms3 = document.querySelectorAll(".zoom-in-3");
 const zooms4 = document.querySelectorAll(".zoom-in-4");
+const zooms5 = document.querySelectorAll(".zoom-in-img");
 
 const options = {
     threshold: 0.7,
@@ -59,6 +60,9 @@ zooms3.forEach(zoom => {
     zoomOnScroll.observe(zoom);
 });
 zooms4.forEach(zoom => {
+    zoomOnScroll.observe(zoom);
+});
+zooms5.forEach(zoom => {
     zoomOnScroll.observe(zoom);
 });
 
